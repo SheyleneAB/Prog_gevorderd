@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visstat_uploaddata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f36517c9beec7ffd43fb3bcad6bfc74d35390059")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visstat_uploaddata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visstat_uploaddata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elyne\\source\\repos\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj": {}
+    "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elyne\\source\\repos\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj": {
+    "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elyne\\source\\repos\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
         "projectName": "VisStatslb",
-        "projectPath": "C:\\Users\\elyne\\source\\repos\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
         "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elyne\\source\\repos\\SolutionVisStat\\VisStatslb\\obj\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

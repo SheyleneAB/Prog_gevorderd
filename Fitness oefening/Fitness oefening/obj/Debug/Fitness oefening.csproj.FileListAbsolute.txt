@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\obj\Debug\Fitness oefening.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\obj\Debug\Fitness oefening.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\bin\Debug\Fitness oefening.exe.config
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\bin\Debug\Fitness oefening.exe
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\bin\Debug\Fitness oefening.pdb
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\obj\Debug\Fitness oefening.exe
+C:\Users\elyne\Prog_gevorderd\Fitness oefening\Fitness oefening\obj\Debug\Fitness oefening.pdb
