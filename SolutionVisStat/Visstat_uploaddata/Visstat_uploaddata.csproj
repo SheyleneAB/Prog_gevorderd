@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Visstat_sql\Visstat_sql.csproj" />
+    <ProjectReference Include="..\Visstat_sql\Visstat_SQL.csproj" />
   </ItemGroup>
 
 </Project>

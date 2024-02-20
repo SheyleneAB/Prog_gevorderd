@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VisStatslb.interfaces
+namespace VisStatsBL.interfaces
 {
-    internal interface IFileProcessor
+    public interface IFileProcessor
     {
         public List<string> LeesSoorten(string fileName);
     }

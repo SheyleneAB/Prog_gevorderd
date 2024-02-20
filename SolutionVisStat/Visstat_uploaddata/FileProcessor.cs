@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VisStatsBL.interfaces;
 
 namespace Visstat_uploaddata
 {
-    public class FileProcessor
+    public class FileProcessor : IFileProcessor
     {
         public List<string> LeesSoorten(string fileName)
         {

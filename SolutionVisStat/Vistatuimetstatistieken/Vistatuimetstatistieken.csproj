@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\VisStatslb\VisStatsBL.csproj" />
     <ProjectReference Include="..\Visstat_sql\Visstat_sql.csproj" />
     <ProjectReference Include="..\Visstat_uploaddata\Visstat_uploaddata.csproj" />
   </ItemGroup>

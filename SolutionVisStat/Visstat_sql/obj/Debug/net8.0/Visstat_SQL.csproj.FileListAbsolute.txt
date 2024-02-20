@@ -1,0 +1,16 @@
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.AssemblyInfoInputs.cache
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.AssemblyInfo.cs
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.sourcelink.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\Visstat_SQL.deps.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\Visstat_SQL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\Visstat_SQL.pdb
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\VisStatsBL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\VisStatsBL.pdb
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.csproj.CopyComplete
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\refint\Visstat_SQL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.pdb
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\ref\Visstat_SQL.dll

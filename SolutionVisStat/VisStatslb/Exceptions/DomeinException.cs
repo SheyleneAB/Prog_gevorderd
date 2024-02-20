@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VisStatslb.Exceptions
+namespace VisStatsBL.Exceptions
 {
     internal class DomeinException : Exception
     {

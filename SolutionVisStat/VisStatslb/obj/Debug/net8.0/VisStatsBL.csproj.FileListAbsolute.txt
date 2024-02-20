@@ -1,0 +1,12 @@
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.AssemblyInfoInputs.cache
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.AssemblyInfo.cs
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.sourcelink.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\bin\Debug\net8.0\VisStatsBL.deps.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\bin\Debug\net8.0\VisStatsBL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\bin\Debug\net8.0\VisStatsBL.pdb
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\refint\VisStatsBL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\VisStatsBL.pdb
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatslb\obj\Debug\net8.0\ref\VisStatsBL.dll

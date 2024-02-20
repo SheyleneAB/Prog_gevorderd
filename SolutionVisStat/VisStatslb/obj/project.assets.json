@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
-      "projectName": "VisStatslb",
-      "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatslb.csproj",
+      "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatsBL.csproj",
+      "projectName": "VisStatsBL",
+      "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatsBL.csproj",
       "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\obj\\",
       "projectStyle": "PackageReference",

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VisStatslb.Exceptions;
+using VisStatsBL.Exceptions;
 
-namespace VisStatslb.MODEL
+namespace VisStatsBL.MODEL
 {
     public class Vissoort
     {
+        private string naam;
         public Vissoort( string naam)
         {
            Naam = naam;
@@ -21,10 +22,10 @@ namespace VisStatslb.MODEL
         public int? Id;
         public string Naam
         {
-            get { return Naam; }
-            set { if (!string.IsNullOrWhiteSpace(value))
+            get { return naam; }
+            set { if (string.IsNullOrWhiteSpace(value))
                     throw new DomeinException("Vissoort_naam");
-                Naam = value; }
+                naam = value; }
         }
     }
 }
