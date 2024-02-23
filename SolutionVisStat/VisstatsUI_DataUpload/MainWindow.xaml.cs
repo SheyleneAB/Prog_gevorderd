@@ -51,6 +51,17 @@ namespace VisstatsUI_DataUpload
             }
             else VissoortenFileListBox.ItemsSource=null;
         }
+        private void Button_Click_VisHavens(object sender, RoutedEventArgs e)
+        {
+            bool? result = openFileDialog.ShowDialog();
+            if (result == true)
+            {
+                var fileNames = openFileDialog.FileNames;
+                VisHavensFileListBox.ItemsSource = fileNames;
+                openFileDialog.FileName = null;
+            }
+            else VissoortenFileListBox.ItemsSource = null;
+        }
         private void Button_Click_UploadVissoorten(object sender, RoutedEventArgs e)
         {   
             foreach(string fileName in VissoortenFileListBox.ItemsSource)
@@ -60,5 +71,14 @@ namespace VisstatsUI_DataUpload
             MessageBox.Show("Upload klaar", "VisStats");
         }
 
+
+        private void Button_Click_UploadHavens(object sender, RoutedEventArgs e)
+        {
+            foreach (string fileName in VisHavensFileListBox.ItemsSource)
+            {
+                visStatsManager.UploadVisHavens(fileName);
+            }
+            MessageBox.Show("Upload klaar", "VisStats");
+        }
     }
 }

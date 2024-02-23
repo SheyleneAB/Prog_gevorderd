@@ -30,6 +30,16 @@ namespace VisStatsBL.Manager
                     visStatsRepository.SchrijfVissoort(vissoort);
             }
         }
+        public void UploadVisHavens (string fileName)
+        {
+            List<string> havens = fileProcessor.LeesHavens(fileName);
+            List<Haven> visHavens = MaakHavens(havens);
+            foreach (Haven haven in visHavens)
+            {
+                if (!visStatsRepository.HeeftHaven(haven))
+                    visStatsRepository.SchrijfHaven(haven);
+            }
+        }
         private List<Vissoort> MaakVissoorten (List<string> soorten)
         {
             Dictionary<string, Vissoort> visSoorten = new();
@@ -48,6 +58,25 @@ namespace VisStatsBL.Manager
                 }
             }
             return visSoorten.Values.ToList();
+        }
+        private List<Haven> MaakHavens (List<string> havens)
+        {
+            Dictionary<string, Haven> visHavens = new();
+            foreach( var haven in havens)
+            {
+                if (!visHavens.ContainsKey(haven))
+                {
+                    try
+                    {
+                        visHavens.Add(haven, new Haven(haven));
+                    }
+                    catch (DomeinException)
+                    {
+
+                    }
+                }
+            }
+            return visHavens.Values.ToList();
         }
     }
 }

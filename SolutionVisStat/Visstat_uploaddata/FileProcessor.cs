@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VisStatsBL.interfaces;
+using VisStatsBL.MODEL;
 
 namespace Visstat_uploaddata
 {
@@ -25,6 +26,24 @@ namespace Visstat_uploaddata
                 return soorten;
             }
             catch (Exception ex) { throw new Exception($"FileProcessor-LeesSoorten [{fileName}]"); }
+        }
+        public List<string> LeesHavens (string fileName)
+        {
+            try
+            {
+                List<string> havens = new List<string>();
+                using (StreamReader reader = new StreamReader(fileName))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        havens.Add(line.Trim());
+                    }
+                }
+                return havens;
+            }
+            catch (Exception ex) { throw new Exception($"FileProcessor-LeesSoorten [{fileName}]"); }
+
         }
     }
 }

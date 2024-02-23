@@ -9,5 +9,7 @@ namespace VisStatsBL.interfaces
     public interface IFileProcessor
     {
         public List<string> LeesSoorten(string fileName);
+        public List<string> LeesHavens(string fileName);
     }
+    
 }

@@ -48,5 +48,35 @@ namespace Visstat_SQL
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public bool HeeftHaven(Haven haven)
+        {
+            string SQL = "SELECT count(*) FROM soort WHERE naam = @naam";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                conn.Open();
+                cmd.CommandText = SQL;
+                cmd.Parameters.Add(new SqlParameter("@naam", System.Data.SqlDbType.NVarChar));
+                cmd.Parameters["@naam"].Value = haven.Naam;
+                int n = (int)cmd.ExecuteScalar();
+                if (n > 0) return true; else return false;
+
+            }
+        }
+
+        public void SchrijfHaven(Haven haven)
+        {
+            string SQL = "INSERT INTO Soort(naam) VALUES(@naam) ";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                conn.Open();
+                cmd.CommandText = SQL;
+                cmd.Parameters.Add(new SqlParameter("@naam", System.Data.SqlDbType.NVarChar));
+                cmd.Parameters["@naam"].Value = haven.Naam;
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

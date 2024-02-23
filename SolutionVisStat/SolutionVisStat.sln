@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visstat_uploaddata", "Visst
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testmaps", "Testmaps", "{C820F416-7F92-41D8-A921-5AFDEF01EF79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3927DEE5-094B-4075-8B39-BB5F93E57588}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisstatsUI_DataUpload", "VisstatsUI_DataUpload\VisstatsUI_DataUpload.csproj", "{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisstatsUI_DataUpload", "VisstatsUI_DataUpload\VisstatsUI_DataUpload.csproj", "{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{E5DF001F-E4D3-43BA-9CE5-7BC2BB2598CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5DF001F-E4D3-43BA-9CE5-7BC2BB2598CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5DF001F-E4D3-43BA-9CE5-7BC2BB2598CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3927DEE5-094B-4075-8B39-BB5F93E57588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3927DEE5-094B-4075-8B39-BB5F93E57588}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3927DEE5-094B-4075-8B39-BB5F93E57588}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3927DEE5-094B-4075-8B39-BB5F93E57588}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,9 +38,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{3927DEE5-094B-4075-8B39-BB5F93E57588} = {C820F416-7F92-41D8-A921-5AFDEF01EF79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {735FC96B-0514-49FE-B7D6-0362108E851E}
