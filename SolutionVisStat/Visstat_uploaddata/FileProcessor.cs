@@ -42,7 +42,7 @@ namespace Visstat_uploaddata
                 }
                 return havens;
             }
-            catch (Exception ex) { throw new Exception($"FileProcessor-LeesSoorten [{fileName}]"); }
+            catch (Exception ex) { throw new Exception($"FileProcessor-LeesHavens [{fileName}]"); }
 
         }
     }

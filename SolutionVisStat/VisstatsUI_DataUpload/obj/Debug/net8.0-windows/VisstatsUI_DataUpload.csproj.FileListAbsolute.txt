@@ -20,9 +20,6 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\obj\Debug\ne
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\obj\Debug\net8.0-windows\VisstatsUI_DataUpload.genruntimeconfig.cache
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\obj\Debug\net8.0-windows\ref\VisstatsUI_DataUpload.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\obj\Debug\net8.0-windows\VisstatsUI_DataUpload.csproj.AssemblyReference.cache
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\ConsoleApp1.deps.json
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\ConsoleApp1.runtimeconfig.json
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\ConsoleApp1.exe
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
@@ -56,11 +53,9 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\ne
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\ConsoleApp1.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsBL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_SQL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_uploaddata.dll
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\ConsoleApp1.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsBL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_uploaddata.pdb

@@ -51,14 +51,14 @@ namespace Visstat_SQL
 
         public bool HeeftHaven(Haven haven)
         {
-            string SQL = "SELECT count(*) FROM soort WHERE naam = @naam";
+            string SQL = "SELECT count(*) FROM haven WHERE stad = @stad";
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = conn.CreateCommand())
             {
                 conn.Open();
                 cmd.CommandText = SQL;
-                cmd.Parameters.Add(new SqlParameter("@naam", System.Data.SqlDbType.NVarChar));
-                cmd.Parameters["@naam"].Value = haven.Naam;
+                cmd.Parameters.Add(new SqlParameter("@stad", System.Data.SqlDbType.NVarChar));
+                cmd.Parameters["@stad"].Value = haven.Stad;
                 int n = (int)cmd.ExecuteScalar();
                 if (n > 0) return true; else return false;
 
@@ -67,14 +67,14 @@ namespace Visstat_SQL
 
         public void SchrijfHaven(Haven haven)
         {
-            string SQL = "INSERT INTO Soort(naam) VALUES(@naam) ";
+            string SQL = "INSERT INTO haven(stad) VALUES(@Stad) ";
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = conn.CreateCommand())
             {
                 conn.Open();
                 cmd.CommandText = SQL;
-                cmd.Parameters.Add(new SqlParameter("@naam", System.Data.SqlDbType.NVarChar));
-                cmd.Parameters["@naam"].Value = haven.Naam;
+                cmd.Parameters.Add(new SqlParameter("@stad", System.Data.SqlDbType.NVarChar));
+                cmd.Parameters["@stad"].Value = haven.Stad;
                 cmd.ExecuteNonQuery();
             }
         }

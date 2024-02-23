@@ -9,26 +9,26 @@ namespace VisStatsBL.MODEL
 {
     public class Haven
     {
-        private string naam;
+        private string stad;
 
-        public Haven ( string naam)
+        public Haven ( string stad)
         {
-            Naam = naam;
+            Stad = stad;
         }
-        public Haven (int? id, string naam)
+        public Haven (int? id, string stad)
         {
             Id = id;
-            Naam = naam;
+            Stad = stad;
         }
         public int? Id;
-        public string Naam
+        public string Stad
         {
-            get { return naam; }
+            get { return stad; }
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new DomeinException("Vissoort_naam");
-                naam = value;
+                    throw new DomeinException("Haven_stad");
+                stad = value;
             }
         }
 
