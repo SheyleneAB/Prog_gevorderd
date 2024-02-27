@@ -16,6 +16,6 @@ namespace Fitness_oefening
         }
         public int Sequentienr { get; set; }
         public double Loopsnelheid { get; set; }
-        public TimeSpan Tijdsduursec { get; set; }
+        public int Tijdsduursec { get; set; }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using VisStatsBL.MODEL;
 using VisStatsBL.interfaces;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 
 namespace Visstat_SQL
@@ -77,6 +78,40 @@ namespace Visstat_SQL
                 cmd.Parameters["@stad"].Value = haven.Stad;
                 cmd.ExecuteNonQuery();
             }
+        }
+        public bool IsOpgeladen(string fileName)
+        {
+            throw new NotImplementedException();
+        }
+        public void SchrijfStatiestieken(List<VisStatsDataRecord> data, string fileName)
+        {
+            throw new NotImplementedException();
+        }
+        public List<Haven> LeesHavens()
+        {
+            throw new NotImplementedException();
+        }
+        public List<Vissoort> LeesVissoorten()
+        {
+            string SQL = "SELECT * FROM Soort";
+            List<Vissoort> soorten = new List<Vissoort>();
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    IDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        soorten.Add(new Vissoort((int)reader["id"], (string)reader["naam"]));
+                    }
+                    return soorten;
+                }
+                catch(Exception ex) { throw new Exception("leessoorten", ex); }
+            }
+
         }
     }
 }

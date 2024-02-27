@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VisStatsBL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43bdd158374b78b3cdec8104fb2163fe1e5c3e56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07419e0a77f576864b88970c8fb98c1232d76da4")]
 [assembly: System.Reflection.AssemblyProductAttribute("VisStatsBL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VisStatsBL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

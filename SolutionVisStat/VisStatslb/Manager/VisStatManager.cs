@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using VisStatsBL.Exceptions;
@@ -77,6 +78,20 @@ namespace VisStatsBL.Manager
                 }
             }
             return visHavens.Values.ToList();
+        }
+        public void UploadStatistieken(string fileName)
+        {
+            try
+            {
+                if (!visStatsRepository.IsOpgeladen(fileName))
+                {
+                    List<Haven> havens = visStatsRepository.LeesHavens();
+                    List<Vissoort> soorten = visStatsRepository.LeesVissoorten();
+                    List<VisStatsDataRecord> data = fileProcessor.LeesStatistieken(fileName, soorten, havens);
+                    visStatsRepository.SchrijfStatiestieken(data, fileName);
+                }
+            }
+            catch (Exception ex) { throw new ManagerException("uploadstatieken", ex); }
         }
     }
 }
