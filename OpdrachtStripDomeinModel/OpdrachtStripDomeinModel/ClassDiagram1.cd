@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OpdrachtStripDomeinModel.Auteur">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAACAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auteur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpdrachtStripDomeinModel.Reeks">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Reeks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpdrachtStripDomeinModel.Strip">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAAgAAQCAAAAAAIAAAAAAAAAAAAAAAAAEQAAA=</HashCode>
+      <FileName>Strip.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UitgeverijStrip" />
+      <Property Name="ReeksStrip" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="AuteurStrip" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="OpdrachtStripDomeinModel.Uitgeverij">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAABAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Uitgeverij.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

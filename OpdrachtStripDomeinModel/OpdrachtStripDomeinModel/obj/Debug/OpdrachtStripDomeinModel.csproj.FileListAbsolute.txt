@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\obj\Debug\OpdrachtStripDomeinModel.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\obj\Debug\OpdrachtStripDomeinModel.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\bin\Debug\OpdrachtStripDomeinModel.exe.config
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\bin\Debug\OpdrachtStripDomeinModel.exe
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\bin\Debug\OpdrachtStripDomeinModel.pdb
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\obj\Debug\OpdrachtStripDomeinModel.exe
+C:\Users\elyne\Prog_gevorderd\OpdrachtStripDomeinModel\OpdrachtStripDomeinModel\obj\Debug\OpdrachtStripDomeinModel.pdb
