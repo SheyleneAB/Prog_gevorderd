@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VisStatslb\VisStatsBL.csproj" />
+    <ProjectReference Include="..\VisStatsUI_Statistieken\VisStatsUI_Statistieken.csproj" />
     <ProjectReference Include="..\Visstat_sql\Visstat_SQL.csproj" />
     <ProjectReference Include="..\Visstat_uploaddata\Visstat_uploaddata.csproj" />
   </ItemGroup>

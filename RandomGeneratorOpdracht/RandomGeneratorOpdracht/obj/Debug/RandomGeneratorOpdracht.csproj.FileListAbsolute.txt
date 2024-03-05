@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\bin\Debug\RandomGeneratorOpdracht.exe.config
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\bin\Debug\RandomGeneratorOpdracht.exe
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\bin\Debug\RandomGeneratorOpdracht.pdb
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\obj\Debug\RandomGeneratorOpdracht.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\obj\Debug\RandomGeneratorOpdracht.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\obj\Debug\RandomGeneratorOpdracht.exe
+C:\Users\elyne\Prog_gevorderd\RandomGeneratorOpdracht\RandomGeneratorOpdracht\obj\Debug\RandomGeneratorOpdracht.pdb

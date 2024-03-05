@@ -60,3 +60,8 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\ne
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\Visstat_uploaddata.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\obj\Debug\net8.0-windows\VisstatsUI_DataUpload.csproj.CopyComplete
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsUI_Statistieken.deps.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsUI_Statistieken.runtimeconfig.json
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsUI_Statistieken.exe
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsUI_Statistieken.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_DataUpload\bin\Debug\net8.0-windows\VisStatsUI_Statistieken.pdb

@@ -81,15 +81,93 @@ namespace Visstat_SQL
         }
         public bool IsOpgeladen(string fileName)
         {
-            throw new NotImplementedException();
+            string SQL = "SELECT count(*) FROM upload WHERE filename = @filename";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    cmd.Parameters.AddWithValue("@filename", fileName.Substring(fileName.LastIndexOf("\\") +1));
+                    int n = (int)cmd.ExecuteScalar();
+                    if (n > 0) return true; else return false;
+                    
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("IsOpgeladen", ex);
+                }
+            }
         }
         public void SchrijfStatiestieken(List<VisStatsDataRecord> data, string fileName)
         {
-            throw new NotImplementedException();
+            string SQLdata = "INSERT INTO VisStats(jaar, maand, haven_id, soort_id, gewicht, waarde) VALUES(@jaar, @maand, @haven_id, @soort_id, @gewicht, @waarde)";
+            string SQLupload = "INSERT INTO upload(filename, datum, pad) VALUES (@filename, @datum, @pad)";
+            using (SqlConnection conn = new SqlConnection(connectionString)) 
+            using(SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    //schrijven data
+                    cmd.CommandText = SQLdata;
+                    cmd.Transaction = conn.BeginTransaction();
+                    cmd.Parameters.Add(new SqlParameter("@jaar", SqlDbType.Int));
+                    cmd.Parameters.Add(new SqlParameter("@maand", SqlDbType.Int));
+                    cmd.Parameters.Add(new SqlParameter("@haven_id", SqlDbType.Int));
+                    cmd.Parameters.Add(new SqlParameter("@soort_id", SqlDbType.Int));
+                    cmd.Parameters.Add(new SqlParameter("@gewicht", SqlDbType.Float));
+                    cmd.Parameters.Add(new SqlParameter("@waarde", SqlDbType.Float));
+                    foreach (VisStatsDataRecord dataRecord in data)
+                    {
+                        cmd.Parameters["@jaar"].Value = dataRecord.Jaar;
+                        cmd.Parameters["@maand"].Value = dataRecord.Maand;
+                        cmd.Parameters["@haven_id"].Value = dataRecord.Haven;
+                        cmd.Parameters["@soort_id"].Value = dataRecord.Vissoort;
+                        cmd.Parameters["@gewicht"].Value = dataRecord.Gewicht;
+                        cmd.Parameters["@waarde"].Value = dataRecord.Jaar;
+                        cmd.ExecuteNonQuery();
+                    }
+                    //schrijven upload
+                    cmd.CommandText = SQLupload;
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@filename", fileName.Substring(fileName.LastIndexOf("\\")+1));
+                    cmd.Parameters.AddWithValue("@pad", fileName.Substring(fileName.LastIndexOf("\\")+1));
+                    cmd.Parameters.AddWithValue("@datum", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                    cmd.Transaction.Commit();
+
+                }
+                catch (Exception ex)
+                {
+                    cmd.Transaction.Rollback();
+                    throw new Exception("SchrijfStatiestieken", ex);
+                }
+            }
+
+
         }
         public List<Haven> LeesHavens()
         {
-            throw new NotImplementedException();
+            string SQL = "SELECT * FROM haven";
+            List<Haven> Havens = new List<Haven>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    IDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Havens.Add(new Haven((int)reader["id"], (string)reader["naam"]));
+                    }
+                    return Havens;
+                }
+                catch (Exception ex) { throw new Exception("leessoorten", ex); }
+            }
         }
         public List<Vissoort> LeesVissoorten()
         {
@@ -112,6 +190,27 @@ namespace Visstat_SQL
                 catch(Exception ex) { throw new Exception("leessoorten", ex); }
             }
 
+        }
+        public List<int> LeesJaartallen()
+        {
+            string SQL = "SELECT DISTINCT jaar FROM visStats";
+            List<int> jaren = new List<int>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    IDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        jaren.Add((int)reader["jaar"]);
+                    }
+                    return jaren;
+                }
+                catch (Exception ex) { throw new Exception("leesjaren", ex); }
+            }
         }
     }
 }

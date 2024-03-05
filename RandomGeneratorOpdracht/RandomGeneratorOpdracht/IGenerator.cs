@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RandomGeneratorOpdracht
 {
-    internal class IGenerator
+    internal interface IGenerator
     {
+        List<int> GeefUniekeGetal(int aantal);
     }
 }

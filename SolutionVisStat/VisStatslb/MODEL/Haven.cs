@@ -31,6 +31,10 @@ namespace VisStatsBL.MODEL
                 stad = value;
             }
         }
+        public override string ToString()
+        {
+            return stad;
+        }
 
     }
 }

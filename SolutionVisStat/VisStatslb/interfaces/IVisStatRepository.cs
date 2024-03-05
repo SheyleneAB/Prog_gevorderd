@@ -11,5 +11,6 @@ namespace VisStatsBL.interfaces
         void SchrijfStatiestieken(List<VisStatsDataRecord> data, string fileName);
         List<Haven> LeesHavens();
         List<Vissoort> LeesVissoorten();
+        List<int> LeesJaartallen();
     }
 }

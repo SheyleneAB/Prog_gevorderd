@@ -9,6 +9,7 @@
       "VisstatsUI_DataUpload/1.0.0": {
         "dependencies": {
           "VisStatsBL": "1.0.0",
+          "VisStatsUI_Statistieken": "1.0.0",
           "Visstat_SQL": "1.0.0",
           "Visstat_uploaddata": "1.0.0"
         },
@@ -403,6 +404,16 @@
           "VisStatsBL.dll": {}
         }
       },
+      "VisStatsUI_Statistieken/1.0.0": {
+        "dependencies": {
+          "VisStatsBL": "1.0.0",
+          "Visstat_SQL": "1.0.0",
+          "Visstat_uploaddata": "1.0.0"
+        },
+        "runtime": {
+          "VisStatsUI_Statistieken.dll": {}
+        }
+      },
       "Visstat_SQL/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.5",
@@ -730,6 +741,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "VisStatsBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VisStatsUI_Statistieken/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -93,5 +93,39 @@ namespace VisStatsBL.Manager
             }
             catch (Exception ex) { throw new ManagerException("uploadstatieken", ex); }
         }
+        public List<Haven> GeefHaven()
+        {
+            try
+            {
+                return visStatsRepository.LeesHavens();
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("GeefHavens");
+            }
+        }
+        public List<Vissoort> GeefVissoorten()
+        {
+
+            try
+            {
+                return visStatsRepository.LeesVissoorten();
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("GeefVissoorten");
+            }
+        }
+        public List<int> GeefJaartallen()
+        {
+            try
+            {
+                return visStatsRepository.LeesJaartallen();
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("GeefJaartallen");
+            }
+        }
     }
 }

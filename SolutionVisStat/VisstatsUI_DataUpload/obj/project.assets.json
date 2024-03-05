@@ -817,6 +817,24 @@
           "bin/placeholder/VisStatsBL.dll": {}
         }
       },
+      "VisStatsUI_Statistieken/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "VisStatsBL": "1.0.0",
+          "Visstat_SQL": "1.0.0",
+          "Visstat_uploaddata": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VisStatsUI_Statistieken.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisStatsUI_Statistieken.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Visstat_SQL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2254,6 +2272,11 @@
       "path": "../VisStatslb/VisStatsBL.csproj",
       "msbuildProject": "../VisStatslb/VisStatsBL.csproj"
     },
+    "VisStatsUI_Statistieken/1.0.0": {
+      "type": "project",
+      "path": "../VisStatsUI_Statistieken/VisStatsUI_Statistieken.csproj",
+      "msbuildProject": "../VisStatsUI_Statistieken/VisStatsUI_Statistieken.csproj"
+    },
     "Visstat_SQL/1.0.0": {
       "type": "project",
       "path": "../Visstat_sql/Visstat_SQL.csproj",
@@ -2268,6 +2291,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "VisStatsBL >= 1.0.0",
+      "VisStatsUI_Statistieken >= 1.0.0",
       "Visstat_SQL >= 1.0.0",
       "Visstat_uploaddata >= 1.0.0"
     ]
@@ -2306,6 +2330,9 @@
           "projectReferences": {
             "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatsBL.csproj": {
               "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\VisStatsBL.csproj"
+            },
+            "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatsUI_Statistieken\\VisStatsUI_Statistieken.csproj": {
+              "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatsUI_Statistieken\\VisStatsUI_Statistieken.csproj"
             },
             "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_sql\\Visstat_SQL.csproj": {
               "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_sql\\Visstat_SQL.csproj"
