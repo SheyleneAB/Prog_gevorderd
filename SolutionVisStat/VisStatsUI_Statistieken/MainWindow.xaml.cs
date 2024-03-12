@@ -106,7 +106,13 @@ namespace VisStatsUI_Statistieken
 
         private void ToonStatistieken_Click(object sender, RoutedEventArgs e)
         {
+            Eenheid eenheid  ;
+            if ((bool)KgRadioButton.IsChecked)  { eenheid = Eenheid.kg; } else eenheid = Eenheid.euro;
+            List<Jaarvangst> vangst = visStatsManager.GeefVangst((int)JaarComboBox.SelectedItem, (Haven)HavensComboBox.SelectedItem,
+                GeselecteerdeVissoorten.ToList(), eenheid);
 
+            StatistiekenWindow w = new StatistiekenWindow((int)JaarComboBox.SelectedItem, (Haven) HavensComboBox.SelectedItem, eenheid, vangst);
+            w.ShowDialog();
         }
     }
 }

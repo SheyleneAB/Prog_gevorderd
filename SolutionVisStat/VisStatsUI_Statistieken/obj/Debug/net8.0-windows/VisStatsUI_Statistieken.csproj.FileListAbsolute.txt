@@ -59,4 +59,6 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\bin\Debug\
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\bin\Debug\net8.0-windows\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\bin\Debug\net8.0-windows\Visstat_uploaddata.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\obj\Debug\net8.0-windows\VisStatsUI_Statistieken.csproj.AssemblyReference.cache
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\obj\Debug\net8.0-windows\VisStatsUI_Statistieken.csproj.CopyComplete
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\obj\Debug\net8.0-windows\StatistiekenWindow.g.cs
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\obj\Debug\net8.0-windows\StatistiekenWindow.baml
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisStatsUI_Statistieken\obj\Debug\net8.0-windows\VisStats.C7FEE3E3.Up2Date

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visstat_SQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7f18f79116440b201bdbc3b033f521b01fdf5c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b2116cf4afce485973d0c1cba0207977f5c1480")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visstat_SQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visstat_SQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

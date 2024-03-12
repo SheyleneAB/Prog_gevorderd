@@ -11,8 +11,8 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\bin\Debug\net8.
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\bin\Debug\net8.0\Visstat_SQL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\bin\Debug\net8.0\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\bin\Debug\net8.0\VisStatsBL.pdb
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\Visstat_uploaddata.csproj.CopyComplete
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\Visstat_uploaddata.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\refint\Visstat_uploaddata.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\Visstat_uploaddata.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\ref\Visstat_uploaddata.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_uploaddata\obj\Debug\net8.0\Visstat_.CB2E6090.Up2Date

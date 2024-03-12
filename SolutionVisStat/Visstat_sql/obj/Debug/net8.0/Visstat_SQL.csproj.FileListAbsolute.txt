@@ -9,8 +9,8 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\Visst
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\VisStatsBL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\bin\Debug\net8.0\VisStatsBL.pdb
-C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.csproj.CopyComplete
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\refint\Visstat_SQL.dll
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\ref\Visstat_SQL.dll
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\Visstat_sql\obj\Debug\net8.0\Visstat_.59E7C455.Up2Date

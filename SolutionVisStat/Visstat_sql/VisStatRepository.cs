@@ -212,5 +212,44 @@ namespace Visstat_SQL
                 catch (Exception ex) { throw new Exception("leesjaren", ex); }
             }
         }
+        public List<Jaarvangst> LeesStatistieken(int jaar, Haven haven, List<Vissoort> vissoorten, Eenheid eenheid)
+        {
+            string kolom = "";
+            switch(eenheid)
+            {
+                case Eenheid.kg: kolom = "gewicht"; break;
+                case Eenheid.euro: kolom = "waarde"; break;
+            }
+            string paraSoorten = "";
+            string SQL = $"SELECT naam,jaarnmin({kolom}), minimum, max({kolom}),maximum, avg({kolom}), gemiddelde, sum ({kolom},)" +
+                $" totaal FROM VisStats t1 inner join soort t2 on t1.soort_id = t2.id" +
+                $"WHERE jaar = @jaar and soort_id IN({paraSoorten}) and haven_id = @haven_id group by t2.naam, jaar, haven_id";
+            List<Jaarvangst> vangst = new();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    cmd.Parameters.AddWithValue("@jaar", jaar);
+                    cmd.Parameters.AddWithValue("@haven_id", haven.Id);
+                    for (int i = 0; i < vissoorten.Count; i++)
+                    {
+                        cmd.Parameters.AddWithValue($"{i}", vissoorten[i].Id);
+
+                    }
+                    IDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        vangst.Add(new Jaarvangst((string)reader["naam"], (double)reader["totaal"], (double)reader["minimum"],
+                            (double)reader["maximum"], (double)reader["gemiddelde"]));
+                    }
+                    return vangst;
+                }
+                catch (Exception ex) { throw new Exception("LeesStatiesteieken", ex); }
+                }
+            }
+        }
     }
-}
+

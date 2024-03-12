@@ -127,5 +127,16 @@ namespace VisStatsBL.Manager
                 throw new ManagerException("GeefJaartallen");
             }
         }
+        public List<Jaarvangst> GeefVangst(int jaar, Haven haven, List<Vissoort> vissoorts, Eenheid eenheid)
+        {
+            try
+            {
+                return visStatsRepository.LeesStatistieken(jaar, haven, vissoorts, eenheid);
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("Jaarvangst");
+            }
+        }
     }
 }
