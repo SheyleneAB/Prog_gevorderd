@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\obj\Debug\LinqOef.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\obj\Debug\LinqOef.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\bin\Debug\LinqOef.exe.config
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\bin\Debug\LinqOef.exe
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\bin\Debug\LinqOef.pdb
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\obj\Debug\LinqOef.exe
+C:\Users\elyne\Prog_gevorderd\LinqOef\LinqOef\obj\Debug\LinqOef.pdb

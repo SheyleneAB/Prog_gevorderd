@@ -1,0 +1,2 @@
+C:\Users\elyne\Prog_gevorderd\TrainingsDataOef\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\TrainingsDataOef\test\obj\Debug\test.csproj.CoreCompileInputs.cache

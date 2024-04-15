@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstatslb\\manager\\visstatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|solutionrelative:visstatslb\\manager\\visstatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{512086C7-2284-492D-AAC1-3ADEBE7DD19C}|Visstat_sql\\Visstat_SQL.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstat_sql\\visstatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{512086C7-2284-492D-AAC1-3ADEBE7DD19C}|Visstat_sql\\Visstat_SQL.csproj|solutionrelative:visstat_sql\\visstatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstatslb\\interfaces\\ivisstatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|solutionrelative:visstatslb\\interfaces\\ivisstatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5DF001F-E4D3-43BA-9CE5-7BC2BB2598CB}|Visstat_uploaddata\\Visstat_uploaddata.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstat_uploaddata\\fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DF001F-E4D3-43BA-9CE5-7BC2BB2598CB}|Visstat_uploaddata\\Visstat_uploaddata.csproj|solutionrelative:visstat_uploaddata\\fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstatslb\\model\\haven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|solutionrelative:visstatslb\\model\\haven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|c:\\users\\elyne\\prog_gevorderd\\solutionvisstat\\visstatslb\\model\\eenheid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789D2046-1267-47B9-8FF2-EB69649AF93F}|VisStatslb\\VisStatsBL.csproj|solutionrelative:visstatslb\\model\\eenheid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IVisStatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\interfaces\\IVisStatRepository.cs",
+              "RelativeDocumentMoniker": "VisStatslb\\interfaces\\IVisStatRepository.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\interfaces\\IVisStatRepository.cs",
+              "RelativeToolTip": "VisStatslb\\interfaces\\IVisStatRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T15:56:13.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisStatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_sql\\VisStatRepository.cs",
+              "RelativeDocumentMoniker": "Visstat_sql\\VisStatRepository.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_sql\\VisStatRepository.cs",
+              "RelativeToolTip": "Visstat_sql\\VisStatRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:57:26.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_uploaddata\\FileProcessor.cs",
+              "RelativeDocumentMoniker": "Visstat_uploaddata\\FileProcessor.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\Visstat_uploaddata\\FileProcessor.cs",
+              "RelativeToolTip": "Visstat_uploaddata\\FileProcessor.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:55:48.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Haven.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\MODEL\\Haven.cs",
+              "RelativeDocumentMoniker": "VisStatslb\\MODEL\\Haven.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\MODEL\\Haven.cs",
+              "RelativeToolTip": "VisStatslb\\MODEL\\Haven.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:38:12.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Eenheid.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\MODEL\\Eenheid.cs",
+              "RelativeDocumentMoniker": "VisStatslb\\MODEL\\Eenheid.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\MODEL\\Eenheid.cs",
+              "RelativeToolTip": "VisStatslb\\MODEL\\Eenheid.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:38:10.523Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +104,7 @@
               "RelativeDocumentMoniker": "VisStatslb\\Manager\\VisStatManager.cs",
               "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\SolutionVisStat\\VisStatslb\\Manager\\VisStatManager.cs",
               "RelativeToolTip": "VisStatslb\\Manager\\VisStatManager.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAIEAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T09:08:05.106Z",
               "EditorCaption": ""

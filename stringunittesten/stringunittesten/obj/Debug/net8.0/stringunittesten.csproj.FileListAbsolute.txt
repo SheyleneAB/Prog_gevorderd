@@ -1,0 +1,5 @@
+C:\Users\elyne\OpdrachtStraat\Adressen\stringunittesten\stringunittesten\obj\Debug\net8.0\stringunittesten.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elyne\OpdrachtStraat\Adressen\stringunittesten\stringunittesten\obj\Debug\net8.0\stringunittesten.AssemblyInfoInputs.cache
+C:\Users\elyne\OpdrachtStraat\Adressen\stringunittesten\stringunittesten\obj\Debug\net8.0\stringunittesten.AssemblyInfo.cs
+C:\Users\elyne\OpdrachtStraat\Adressen\stringunittesten\stringunittesten\obj\Debug\net8.0\stringunittesten.csproj.CoreCompileInputs.cache
+C:\Users\elyne\OpdrachtStraat\Adressen\stringunittesten\stringunittesten\obj\Debug\net8.0\stringunittesten.sourcelink.json
