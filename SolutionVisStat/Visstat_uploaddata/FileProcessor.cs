@@ -62,10 +62,10 @@ namespace Visstat_uploaddata
                     while ((line = sr.ReadLine()) != null)
                     {
                         //lees tot begin van een maand
-                        if (Regex.IsMatch(line, @"^-+\d(6)-+"))
+                        if (Regex.IsMatch(line, @"^-+\d{6}-+"))
                         {
-                            jaar = Int32.Parse(Regex.Match(line, @"\d(4)").Value);
-                            maand = Int32.Parse(Regex.Match(line, @"(\d(2))-+").Groups[1].Value);
+                            jaar = Int32.Parse(Regex.Match(line, @"\d{4}").Value);
+                            maand = Int32.Parse(Regex.Match(line, @"(\d{2})-+").Groups[1].Value);
                             havensTXT.Clear();
                         }
                         //lees namen havens

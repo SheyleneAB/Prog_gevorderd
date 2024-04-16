@@ -1,0 +1,88 @@
+﻿<Window x:Class="VisstatsUI_Maand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisstatsUI_Maand"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="auto"/>
+           
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderBrush="DarkRed" BorderThickness="1" Margin="2">
+            <Grid Background="LightPink">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Label  Grid.Column="0" Content="Vissoort" Margin="5" HorizontalAlignment="Center"/>
+                <ComboBox Grid.Column="1" Name="VissoortComboBox" Margin="5"/>
+                
+                <Label  Grid.Column="4" Content="Eenheid" Margin="5"/>
+                <RadioButton Grid.Column="5" Content="kg" Margin="5" Name="KgRadioButton" IsChecked="True" VerticalAlignment="Center"/>
+                <RadioButton Grid.Column="6" Content="euro" Margin="5" Name="EuroRadioButton" IsChecked="False" VerticalAlignment="Center"/>
+
+            </Grid>
+
+        </Border>
+        <Border Grid.Row="1" BorderBrush="LightCoral" BorderThickness="1" Margin="2">
+            <Grid Background="LightCoral">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+
+                </Grid.ColumnDefinitions>
+                <Label HorizontalAlignment="Center" Grid.Column="0" Content="Jaren" Margin=" 5"/>
+                <ListBox Grid.Column="1" Name = "AlleJarenListBox" SelectionMode="Extended" Margin="5"/>
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <Button Background="AliceBlue" Name="voegAlleJarenToe" Content="&gt; &gt; " Margin="5" Click="voegAlleJarenToeButton_Click"/>
+                    <Button Background="AliceBlue" Name="voegJarenToe" Content="&gt;  " Margin="5" Click="voegJarenToeButton_Click"/>
+                    <Button Background="AliceBlue" Name="verwijderJaren" Content="&lt; " Margin="5" Click="verwijderJarenButton_Click"/>
+                    <Button Background="AliceBlue" Name="verwijderAlleJarenToe" Content="&lt; &lt; " Margin="5" Click="verwijderAlleJarenToeButton_Click"/>
+                </StackPanel>
+                <ListBox Grid.Column="3" Name="GeselecteerdeJarenListBox" SelectionMode="Extended" Margin="5"/>
+            </Grid>
+            
+
+        </Border>
+        <Border Grid.Row="2" BorderBrush="LightCoral" BorderThickness="1" Margin="2">
+            <Grid Background="DarkSalmon">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Content="Havens" Margin=" 5"/>
+                <ListBox Grid.Column="1" Name = "AlleHavensListBox" SelectionMode="Extended" Margin="5"/>
+                <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                    <Button Background="AliceBlue" Name="voegAlleHavensToe" Content="&gt; &gt; " Margin="5" Click="voegAlleHavensToeButton_Click"/>
+                    <Button Background="AliceBlue" Name="voegHavensToe" Content="&gt;  " Margin="5" Click="voegHavensToeButton_Click"/>
+                    <Button Background="AliceBlue" Name="verwijderHavens" Content="&lt; " Margin="5" Click="verwijderHavensButton_Click"/>
+                    <Button Background="AliceBlue" Name="verwijderAlleHavens" Content="&lt; &lt; " Margin="5" Click="verwijderAlleHavensButton_Click"/>
+                </StackPanel>
+                <ListBox Grid.Column="3" Name="GeselecteerdeHavensListBox" SelectionMode="Extended" Margin="5"/>
+            </Grid>
+
+
+        </Border>
+
+        <Button Grid.Row="3" Content="Toon Statistieken" Click="ToonStatistieken_Click" Margin="5"/>
+    </Grid>
+</Window>
+

@@ -28,8 +28,8 @@ namespace Visstat_SQL
             {
                 conn.Open();
                 cmd.CommandText = SQL;
-                cmd.Parameters.Add(new SqlParameter("@naam", System.Data.SqlDbType.NVarChar));
-                cmd.Parameters["@naam"].Value = vissoort.Naam;
+                cmd.Parameters.Add(new SqlParameter("@Naam", System.Data.SqlDbType.VarChar));
+                cmd.Parameters["@Naam"].Value = vissoort.Naam;
                 int n = (int)cmd.ExecuteScalar();
                 if (n > 0) return true; else return false;
 
@@ -74,7 +74,7 @@ namespace Visstat_SQL
             {
                 conn.Open();
                 cmd.CommandText = SQL;
-                cmd.Parameters.Add(new SqlParameter("@stad", System.Data.SqlDbType.NVarChar));
+                cmd.Parameters.Add(new SqlParameter("@Stad", System.Data.SqlDbType.NVarChar));
                 cmd.Parameters["@stad"].Value = haven.Stad;
                 cmd.ExecuteNonQuery();
             }
@@ -123,8 +123,8 @@ namespace Visstat_SQL
                     {
                         cmd.Parameters["@jaar"].Value = dataRecord.Jaar;
                         cmd.Parameters["@maand"].Value = dataRecord.Maand;
-                        cmd.Parameters["@haven_id"].Value = dataRecord.Haven;
-                        cmd.Parameters["@soort_id"].Value = dataRecord.Vissoort;
+                        cmd.Parameters["@haven_id"].Value = dataRecord.Haven.Id;
+                        cmd.Parameters["@soort_id"].Value = dataRecord.Vissoort.Id;
                         cmd.Parameters["@gewicht"].Value = dataRecord.Gewicht;
                         cmd.Parameters["@waarde"].Value = dataRecord.Jaar;
                         cmd.ExecuteNonQuery();
@@ -162,7 +162,7 @@ namespace Visstat_SQL
                     IDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        Havens.Add(new Haven((int)reader["id"], (string)reader["naam"]));
+                        Havens.Add(new Haven((int)reader["Id"], (string)reader["Stad"]));
                     }
                     return Havens;
                 }
@@ -220,10 +220,12 @@ namespace Visstat_SQL
                 case Eenheid.kg: kolom = "gewicht"; break;
                 case Eenheid.euro: kolom = "waarde"; break;
             }
-            string paraSoorten = "";
-            string SQL = $"SELECT naam,jaarnmin({kolom}), minimum, max({kolom}),maximum, avg({kolom}), gemiddelde, sum ({kolom},)" +
-                $" totaal FROM VisStats t1 inner join soort t2 on t1.soort_id = t2.id" +
-                $"WHERE jaar = @jaar and soort_id IN({paraSoorten}) and haven_id = @haven_id group by t2.naam, jaar, haven_id";
+            string paramSoorten = "";
+            for (int i = 0; i < vissoorten.Count; i++) paramSoorten+= $"@ps{i} ,";
+            paramSoorten = paramSoorten.Remove(paramSoorten.Length - 1);
+            string SQL = $"SELECT soort_id, t2.naam soortnaam, jaar, sum({kolom}) totaal, min({kolom}) minimum, max({kolom}) maximum, avg({kolom}) gemiddelde" +
+                $" FROM VisStats t1 left join soort t2 on t1.soort_id = t2.id " +
+                $"WHERE jaar = @jaar and soort_id IN({paramSoorten}) and haven_id = @haven_id group by t2.naam, jaar, soort_id";
             List<Jaarvangst> vangst = new();
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = conn.CreateCommand())
@@ -236,18 +238,18 @@ namespace Visstat_SQL
                     cmd.Parameters.AddWithValue("@haven_id", haven.Id);
                     for (int i = 0; i < vissoorten.Count; i++)
                     {
-                        cmd.Parameters.AddWithValue($"{i}", vissoorten[i].Id);
+                        cmd.Parameters.AddWithValue($"@ps{i}", vissoorten[i].Id);
 
                     }
                     IDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        vangst.Add(new Jaarvangst((string)reader["naam"], (double)reader["totaal"], (double)reader["minimum"],
+                        vangst.Add(new Jaarvangst((string)reader["soortnaam"], (double)reader["totaal"], (double)reader["minimum"],
                             (double)reader["maximum"], (double)reader["gemiddelde"]));
                     }
                     return vangst;
                 }
-                catch (Exception ex) { throw new Exception("LeesStatiesteieken", ex); }
+                catch (Exception ex) { throw new Exception("LeesStatistieken", ex); }
                 }
             }
         }

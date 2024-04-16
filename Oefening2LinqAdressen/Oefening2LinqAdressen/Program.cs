@@ -10,6 +10,16 @@ namespace Oefening2LinqAdressen
     {
         static void Main(string[] args)
         {
+            string filePath = "C:\\Users\\elyne\\Downloads\\adresInfo\\adresInfo.txt";
+
+            Filereader fileReader = new Filereader(filePath);
+            Provincie provincie = fileReader.ReadDataFromFile();
+            string gemeentenaam = "Schilde";
+
+            fileReader.GetSortedProvincieNamen();
+            fileReader.PrintStraatnamenForGemeente(gemeentenaam);
+
+            Console.ReadLine();
         }
     }
 }

@@ -29,7 +29,7 @@ namespace VisStatsUI_Statistieken
         IFileProcessor fileProcessor;
         IVisStatRepository visStatRepository;
         VisStatManager visStatsManager;
-        string connectionString = @"Data Source=Elyne\SQLEXPRESS;Initial Catalog=PQValue_B;Integrated Security=True;Trust Server Certificate=True";
+        string connectionString = @"Data Source=RADION\SQLEXPRESS;Initial Catalog=Vissen;Integrated Security=True;Trust Server Certificate=True";
         ObservableCollection<Vissoort> AlleVissoorten;
         ObservableCollection<Vissoort> GeselecteerdeVissoorten;
         public MainWindow()
@@ -59,13 +59,11 @@ namespace VisStatsUI_Statistieken
 
         private void VoegAlleSoortenToeButton_Click(object sender, RoutedEventArgs e)
         {
-            List<Vissoort> soorten = new();
-            foreach (Vissoort v  in AlleSoortenListBox.SelectedItems) soorten.Add(v);
-            foreach(Vissoort v in AlleSoortenListBox.SelectedItems)
+            foreach (Vissoort v in AlleVissoorten)
             {
                 GeselecteerdeVissoorten.Add(v);
-                AlleVissoorten.Remove(v);
             }
+            AlleVissoorten.Clear();
         }
 
         private void VoegSoortenToeButton_Click(object sender, RoutedEventArgs e)

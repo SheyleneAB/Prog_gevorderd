@@ -26,7 +26,7 @@ namespace VisStatsUI_Statistieken
             HavenTextBox.Text = haven.Stad;
             JaarTextBox.Text = jaar.ToString();
             EenheidTextBox.Text = eenheid.ToString();
-
+            
             StatistiekenDataGrid.ItemsSource = vangst;
         }
     }

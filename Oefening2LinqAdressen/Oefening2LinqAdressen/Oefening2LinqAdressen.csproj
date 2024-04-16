@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filereader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provincie.cs" />
+    <Compile Include="Stad.cs" />
+    <Compile Include="Straatnamen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

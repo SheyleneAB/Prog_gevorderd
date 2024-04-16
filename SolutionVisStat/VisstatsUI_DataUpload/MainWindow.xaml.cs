@@ -25,7 +25,7 @@ namespace VisstatsUI_DataUpload
         IFileProcessor fileProcessor;
         IVisStatRepository visStatRepository;
         VisStatManager visStatsManager;
-        string connectionString = @"Data Source=Elyne\SQLEXPRESS;Initial Catalog=PQValue_B;Integrated Security=True;Trust Server Certificate=True";
+        string connectionString = @"Data Source=RADION\SQLEXPRESS;Initial Catalog=Vissen;Integrated Security=True;Trust Server Certificate=True";
 
         public MainWindow()
         {

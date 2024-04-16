@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|c:\\users\\elyne\\prog_gevorderd\\oefening2linqadressen\\oefening2linqadressen\\filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|solutionrelative:oefening2linqadressen\\filereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|c:\\users\\elyne\\prog_gevorderd\\oefening2linqadressen\\oefening2linqadressen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|solutionrelative:oefening2linqadressen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|c:\\users\\elyne\\prog_gevorderd\\oefening2linqadressen\\oefening2linqadressen\\straatnamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|solutionrelative:oefening2linqadressen\\straatnamen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|c:\\users\\elyne\\prog_gevorderd\\oefening2linqadressen\\oefening2linqadressen\\provincie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|solutionrelative:oefening2linqadressen\\provincie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|c:\\users\\elyne\\prog_gevorderd\\oefening2linqadressen\\oefening2linqadressen\\stad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB23B42-8A53-4CDF-BBB3-249DA0804CEA}|Oefening2LinqAdressen\\Oefening2LinqAdressen.csproj|solutionrelative:oefening2linqadressen\\stad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Straatnamen.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Straatnamen.cs",
+              "RelativeDocumentMoniker": "Oefening2LinqAdressen\\Straatnamen.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Straatnamen.cs",
+              "RelativeToolTip": "Oefening2LinqAdressen\\Straatnamen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:17:38.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stad.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Stad.cs",
+              "RelativeDocumentMoniker": "Oefening2LinqAdressen\\Stad.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Stad.cs",
+              "RelativeToolTip": "Oefening2LinqAdressen\\Stad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:17:14.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Provincie.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Provincie.cs",
+              "RelativeDocumentMoniker": "Oefening2LinqAdressen\\Provincie.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Provincie.cs",
+              "RelativeToolTip": "Oefening2LinqAdressen\\Provincie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:17:00.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Filereader.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Filereader.cs",
+              "RelativeDocumentMoniker": "Oefening2LinqAdressen\\Filereader.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Filereader.cs",
+              "RelativeToolTip": "Oefening2LinqAdressen\\Filereader.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAqwEwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:19:44.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Program.cs",
               "RelativeDocumentMoniker": "Oefening2LinqAdressen\\Program.cs",
               "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Oefening2LinqAdressen\\Oefening2LinqAdressen\\Program.cs",
               "RelativeToolTip": "Oefening2LinqAdressen\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T18:03:40.526Z",
               "EditorCaption": ""

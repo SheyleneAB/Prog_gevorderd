@@ -27,5 +27,9 @@ namespace VisStatsBL.MODEL
                     throw new DomeinException("Vissoort_naam");
                 naam = value; }
         }
+        public override string ToString()
+        {
+            return $"{Naam}";
+        }
     }
 }

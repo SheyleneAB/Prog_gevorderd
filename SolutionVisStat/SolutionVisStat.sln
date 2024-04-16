@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testmaps", "Testmaps", "{C8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisstatsUI_DataUpload", "VisstatsUI_DataUpload\VisstatsUI_DataUpload.csproj", "{C1D29086-C423-4B7E-BA8E-D22E45FBCFB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisStatsUI_Statistieken", "VisStatsUI_Statistieken\VisStatsUI_Statistieken.csproj", "{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisStatsUI_Statistieken", "VisStatsUI_Statistieken\VisStatsUI_Statistieken.csproj", "{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisstatsUI_Maand", "VisstatsUI_Maand\VisstatsUI_Maand.csproj", "{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

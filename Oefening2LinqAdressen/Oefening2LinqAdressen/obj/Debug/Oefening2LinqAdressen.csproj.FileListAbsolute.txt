@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\bin\Debug\Oefening2LinqAdressen.exe.config
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\bin\Debug\Oefening2LinqAdressen.exe
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\bin\Debug\Oefening2LinqAdressen.pdb
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\obj\Debug\Oefening2LinqAdressen.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\obj\Debug\Oefening2LinqAdressen.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\obj\Debug\Oefening2LinqAdressen.exe
+C:\Users\elyne\Prog_gevorderd\Oefening2LinqAdressen\Oefening2LinqAdressen\obj\Debug\Oefening2LinqAdressen.pdb

@@ -133,7 +133,7 @@ namespace VisStatsBL.Manager
             {
                 return visStatsRepository.LeesStatistieken(jaar, haven, vissoorts, eenheid);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw new ManagerException("Jaarvangst");
             }

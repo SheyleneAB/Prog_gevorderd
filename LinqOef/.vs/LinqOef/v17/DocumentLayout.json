@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|C:\\Users\\elyne\\Prog_gevorderd\\LinqOef\\linqoef\\trainingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|solutionrelative:linqoef\\trainingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|c:\\users\\elyne\\prog_gevorderd\\linqoef\\linqoef\\trainingsdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|solutionrelative:linqoef\\trainingsdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainingsDataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\LinqOef\\LinqOef\\TrainingsDataRepository.cs",
+              "RelativeDocumentMoniker": "LinqOef\\TrainingsDataRepository.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\LinqOef\\LinqOef\\TrainingsDataRepository.cs",
+              "RelativeToolTip": "LinqOef\\TrainingsDataRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T18:59:40.145Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -30,7 +47,8 @@
               "RelativeToolTip": "LinqOef\\Trainingdata.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:37:03.647Z"
+              "WhenOpened": "2024-04-14T17:37:03.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
