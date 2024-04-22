@@ -13,5 +13,6 @@ namespace VisStatsBL.interfaces
         List<Vissoort> LeesVissoorten();
         List<int> LeesJaartallen();
         List<Jaarvangst> LeesStatistieken(int jaar, Haven haven, List<Vissoort> vissoorts, Eenheid eenheid);
+        List<Maandvangst> LeesMaandStatistieken(List<int> jaar, List<Haven> haven, Vissoort vissoort, Eenheid eenheid);
     }
 }

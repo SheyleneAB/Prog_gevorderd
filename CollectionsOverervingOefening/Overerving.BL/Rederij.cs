@@ -11,86 +11,138 @@ namespace Overerving.BL
     {
         public List<Vloot> Vloten;
         public List<string> havens;
-        public void VoegVlootToe()
+        public void VoegVlootToe(Vloot vlot)
         {
-
+            if ((vlot == null) || (Vloten.Contains(vlot))) throw new Exception("Voegvloottoe");
+            Vloten.Add(vlot);
         }
         public void VerwijderVloot(string vlootNaam)
         {
-            foreach (var vloot in Vloten)
+            bool boolnamen = false;
+            if ((vlootNaam == null))
             {
-                if (vloot.naam == vlootNaam)
-                {
-                    Vloten.Remove(vloot);
-                    return;
+                throw new Exception("VerwijderVlot");
+            }
+            foreach(var vlot in Vloten)
+            {
+                if(vlot.naam.Contains(vlootNaam)) {
+                    boolnamen = true;
                 }
             }
-        }
-        public void VoegHavensToe()
-        {
-
-        }
-        public void VerwijderHavens()
-        {
-
-        }
-        public double TotaleCargowaarde()
-        {
-            double totaleCargowaarde = 0;
-
-            foreach (var vloot in Vloten)
+            if (!boolnamen)
             {
-                foreach (var schip in vloot.Schepen)
+                foreach (var vloot in Vloten)
                 {
-                    if (!(schip is Olietanker) && !(schip is Gastanker))
+                    if (vloot.naam == vlootNaam)
                     {
-                        if (schip is ISchipMetCargowaarde)
-                        {
-                            totaleCargowaarde += ((ISchipMetCargowaarde)schip).Cargowaarde;
-                        }
+                        Vloten.Remove(vloot);
+                        return;
                     }
                 }
             }
-
-            return totaleCargowaarde;
         }
-        public int TotaalPassagiers()
+        public void VerplaatsSchipNaarAndereVloot(Schip schip, Vloot bronVloot, Vloot doelVloot)
         {
-            return 0;
+            if (bronVloot == null || doelVloot == null)
+            {
+                Console.WriteLine("Bronvloot of doelvloot bestaat niet.");
+                return;
+            }
+
+            if (bronVloot.Schepen.Contains(schip))
+            {
+                doelVloot.VoegSchipToe(schip);
+                bronVloot.VerwijderSchip(schip);
+                Console.WriteLine($"Schip '{schip.Naam}' is succesvol verplaatst naar vloot '{doelVloot.naam}'.");
+            }
+            else
+            {
+                Console.WriteLine($"Schip '{schip.Naam}' bevindt zich niet in de bronvloot '{bronVloot.naam}'.");
+            }
+        }
+        public void OverzichtHavensPerRederij(Rederij rederij)
+        {
+            if (rederij == null)
+            {
+                Console.WriteLine("Rederij bestaat niet.");
+                return;
+            }
+
+            var gesorteerdeHavens = rederij.havens.OrderBy(haven => haven).ToList();
+
+            Console.WriteLine($"Overzicht van havens van rederij :");
+            foreach (var haven in gesorteerdeHavens)
+            {
+                Console.WriteLine(haven);
+            }
+        }
+        public void VoegHavensToe(string haven)
+        {
+            if (( haven == null) || (havens.Contains(haven))) throw new Exception("Voeghaventoe");
+        }
+        public void VerwijderHavens(string haven)
+        {
+            if ((haven == null) || (!havens.Contains(haven))) throw new Exception("Verwijderhaven");
+            havens.Remove(haven);
+
         }
         public Dictionary<Vloot, double> TonnageVloten() 
         {
-            return new Dictionary<Vloot, double>();
+            var tonnagePerVloot = new Dictionary<Vloot, double>();
+            foreach (var vloot in Vloten)
+            {
+                double totaleTonnage = vloot.Schepen.Sum(schip => schip.Tonnage);
+                tonnagePerVloot.Add(vloot, totaleTonnage);
+                tonnagePerVloot.OrderByDescending(kv => kv.Value).ToDictionary(kv => kv.Key, kv => kv.Value);
+            }
+            return tonnagePerVloot;
         }
         public double AantalVolume() 
         {
-            return 0; 
+            double totaalVolumeTankers = 0;
+            foreach (var vloot in Vloten)
+            {
+                totaalVolumeTankers += vloot.Schepen.OfType<TankerSchip>().Sum(schip => (schip as TankerSchip)?.Volume ?? 0);
+            }
+            return totaalVolumeTankers;
         }
-        public List<Schip> BeschikbareSleepboten () 
+
+        public double TotaleCargowaarde()
         {
-            return new List<Schip>();
-        }
-        public Schip InfoSchip(string s)
-        {
-            
+            double totaleCargowaarde = 0;
             foreach (var vloot in Vloten)
             {
                 foreach (var schip in vloot.Schepen)
                 {
-                    if (schip.Naam == s)
+                    if (schip is CargoSchip)
                     {
-                        return schip;
+                        totaleCargowaarde += ((CargoSchip)schip).Cargowaarde;
                     }
                 }
             }
-            return null;
+            return totaleCargowaarde;
         }
-        /*
-        •De totale cargowaarde van deschepen die tot een rederij behoren.  
-        •Het totaal aantal passagiers.
-        •De tonnage per vloot op te lijsten (van groot naar klein).
-        •Het totaal aantal volume die de tankers kunnen vervoeren.
-        •De beschikbare sleepboten
-        */
+
+        public int BeschikbareSleepboten()
+        {
+            return Vloten.Sum(vloot => vloot.Schepen.OfType<Sleepboot>().Count());
+        }
+
+        public Schip ZoekSchipOpNaam(string schipNaam)
+        {
+            return Vloten.SelectMany(vloot => vloot.Schepen)
+                         .FirstOrDefault(schip => schip.Naam == schipNaam);
+        }
+        public int TotaalAantalPassagiers()
+        {
+            int totaalAantalPassagiers = 0;
+            foreach (var vloot in Vloten)
+            {
+                totaalAantalPassagiers += vloot.Schepen.OfType<PassagiersSchip>().Sum(schip => schip.AantalPassagiers);
+            }
+            return totaalAantalPassagiers;
+        }
+
+        
     }
 }

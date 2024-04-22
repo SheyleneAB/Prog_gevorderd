@@ -16,7 +16,7 @@ namespace VisStatsBL.MODEL
             set
             {
                 if ((value < 2000) || (value > 2100))
-                    throw new DomeinException("jaar is niet correct");
+                    throw new DomeinException("Jaar is niet correct");
                 _jaar = value;
             }
 

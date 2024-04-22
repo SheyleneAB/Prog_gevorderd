@@ -21,7 +21,7 @@ namespace VisStatsBL.Manager
             this.visStatsRepository = visStatsRepositrory;
         }
 
-        public void UploadVissoorten(string fileName) 
+        public void UploadVissoorten(string fileName)
         {
             List<string> soorten = fileProcessor.LeesSoorten(fileName);
             List<Vissoort> vissoorten = MaakVissoorten(soorten);
@@ -31,7 +31,7 @@ namespace VisStatsBL.Manager
                     visStatsRepository.SchrijfVissoort(vissoort);
             }
         }
-        public void UploadVisHavens (string fileName)
+        public void UploadVisHavens(string fileName)
         {
             List<string> havens = fileProcessor.LeesHavens(fileName);
             List<Haven> visHavens = MaakHavens(havens);
@@ -41,7 +41,7 @@ namespace VisStatsBL.Manager
                     visStatsRepository.SchrijfHaven(haven);
             }
         }
-        private List<Vissoort> MaakVissoorten (List<string> soorten)
+        private List<Vissoort> MaakVissoorten(List<string> soorten)
         {
             Dictionary<string, Vissoort> visSoorten = new();
             foreach (var soort in soorten)
@@ -60,10 +60,10 @@ namespace VisStatsBL.Manager
             }
             return visSoorten.Values.ToList();
         }
-        private List<Haven> MaakHavens (List<string> havens)
+        private List<Haven> MaakHavens(List<string> havens)
         {
             Dictionary<string, Haven> visHavens = new();
-            foreach( var haven in havens)
+            foreach (var haven in havens)
             {
                 if (!visHavens.ContainsKey(haven))
                 {
@@ -127,6 +127,7 @@ namespace VisStatsBL.Manager
                 throw new ManagerException("GeefJaartallen");
             }
         }
+
         public List<Jaarvangst> GeefVangst(int jaar, Haven haven, List<Vissoort> vissoorts, Eenheid eenheid)
         {
             try
@@ -138,5 +139,17 @@ namespace VisStatsBL.Manager
                 throw new ManagerException("Jaarvangst");
             }
         }
-    }
+        public List<Maandvangst> GeefMaandVangst(List<int>jaren, List<Haven> havens, Vissoort vissoort, Eenheid eenheid)
+        {
+           try
+           {
+                return visStatsRepository.LeesMaandStatistieken(jaren, havens, vissoort, eenheid);
+           }
+           catch (Exception ex)
+           {
+                throw new ManagerException("Maandvangst");
+           }
+        }
+    } 
 }
+

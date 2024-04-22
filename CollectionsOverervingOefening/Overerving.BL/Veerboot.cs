@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Overerving.BL
 {
-    internal class Veerboot : Schip
+    internal class Veerboot : PassagiersSchip
     {
-        public int aantalpassagiers { get; set; }
-        public List<string> traject { get; set; }
+        public Veerboot(int aantalPassagiers, List<string> traject, double lengte, double breedte, double tonnage, string naam) : base(aantalPassagiers, traject, lengte, breedte, tonnage, naam)
+        {
+        }
     }
 }

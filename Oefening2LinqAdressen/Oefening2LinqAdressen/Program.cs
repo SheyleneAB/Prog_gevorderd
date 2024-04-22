@@ -14,12 +14,20 @@ namespace Oefening2LinqAdressen
 
             Filereader fileReader = new Filereader(filePath);
             Provincie provincie = fileReader.ReadDataFromFile();
-            string gemeentenaam = "Schilde";
 
             fileReader.GetSortedProvincieNamen();
-            fileReader.PrintStraatnamenForGemeente(gemeentenaam);
+            fileReader.PrintStraatnamenForGemeente("Pelt");
+            fileReader.PrintMeesttFrequenteStraatnamen();
+            fileReader.PrintMostFrequentStraatnamen(5);
+            fileReader.PrintGemeenschapStraatnamentssnGemeentes("Pelt", "Riemst");
+            fileReader.PrintStraatnamenEnkelnGemeente("Pelt");
+            fileReader.PrintGemeenteMetMeesteStraatnamen();
+            fileReader.PrintLangsteStraatnaam();
+            fileReader.PrintLangsteStraatnaamMetLocatie();
+            fileReader.PrintUniekeStraatnamenMetLocatie();
+            fileReader.PrintUniekeStraatnamenVoorGemeente("Pelt");
 
-            Console.ReadLine();
+                Console.ReadLine();
         }
     }
 }

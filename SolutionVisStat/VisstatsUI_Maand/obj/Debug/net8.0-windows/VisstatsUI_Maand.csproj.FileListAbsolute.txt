@@ -60,3 +60,5 @@ C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\bin\Debug\net8.0-
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\bin\Debug\net8.0-windows\Visstat_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\bin\Debug\net8.0-windows\Visstat_uploaddata.pdb
 C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\obj\Debug\net8.0-windows\Visstats.7984955B.Up2Date
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\obj\Debug\net8.0-windows\StatistiekenWindow.g.cs
+C:\Users\elyne\Prog_gevorderd\SolutionVisStat\VisstatsUI_Maand\obj\Debug\net8.0-windows\StatistiekenWindow.baml

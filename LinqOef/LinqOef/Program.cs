@@ -39,7 +39,8 @@ namespace LinqOef
             Console.WriteLine("wattage met gemiddelde wattage onder 125 en maximum wattage over 200 ");
             foreach (var x in trainingDataList.Where(x => x.GemiddeldeWattage < 125 && x.MaximumWattage > 200))
             {
-                Console.WriteLine($" {x.DatumUur} {x.Tijdsduur} {x.GemiddeldeWattage} {x.MaximumWattage} {x.GemiddeldeCadans}{x.MaximumCadans} {x.Trainingstype} {x.Commentaar}  {x.Klantnummer}");
+                Console.WriteLine($" {x.DatumUur} {x.Tijdsduur} {x.GemiddeldeWattage} {x.MaximumWattage} " +
+                    $"{x.GemiddeldeCadans}{x.MaximumCadans} {x.Trainingstype} {x.Commentaar}  {x.Klantnummer}");
               
             }
         }
@@ -130,8 +131,8 @@ namespace LinqOef
             var klantTrainingData = trainingDataList
                 .Where(data => data.Klantnummer == klantnummer);
 
-            // aantal treiningstijd
-            int totalTrainingTime = klantTrainingData.Sum(data => data.Tijdsduur);
+            // aantal trainingstijd
+            int totaletrainingstijd = klantTrainingData.Sum(data => data.Tijdsduur);
 
             // langste en kortste trainingsteid
             int shortestTrainingTime = klantTrainingData.Min(data => data.Tijdsduur);
@@ -142,7 +143,7 @@ namespace LinqOef
             int numberOfSessions = klantTrainingData.Count();
 
             Console.WriteLine($"Voor klantnummer {klantnummer}:");
-            Console.WriteLine($"Totale trainingstijd: {totalTrainingTime} minuten");
+            Console.WriteLine($"Totale trainingstijd: {totaletrainingstijd} minuten");
             Console.WriteLine($"Kortste trainingsduur: {shortestTrainingTime} minuten");
             Console.WriteLine($"Langste trainingsduur: {longestTrainingTime} minuten");
             Console.WriteLine($"Gemiddelde trainingsduur: {averageTrainingTime} minuten");

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Overerving.BL
 {
-    internal class Sleepboot : Schip
+    public class Sleepboot : Schip
     {
+        public Sleepboot(double lengte, double breedte, double tonnage, string naam) : base(lengte, breedte, tonnage, naam)
+        {
+        }
     }
 }

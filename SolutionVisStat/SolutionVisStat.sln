@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisstatsUI_DataUpload", "Vi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisStatsUI_Statistieken", "VisStatsUI_Statistieken\VisStatsUI_Statistieken.csproj", "{C6F277FE-5CF8-4930-BB1B-43EE7B6CB7DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisstatsUI_Maand", "VisstatsUI_Maand\VisstatsUI_Maand.csproj", "{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisstatsUI_Maand", "VisstatsUI_Maand\VisstatsUI_Maand.csproj", "{3107C47B-746D-44A8-8ACB-63A25F2CDF6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

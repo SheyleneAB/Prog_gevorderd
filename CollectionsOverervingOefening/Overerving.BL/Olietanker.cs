@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Overerving.BL
 {
-    internal class Olietanker : Schip
+    internal class Olietanker : TankerSchip
     {
-        public double cargowaarde { get; set; }
-        public int volume { get; set; }
+        public Olietanker(LadingOlietanker lading, double volume,  double lengte, double breedte, double tonnage, string naam) 
+            : base(volume, lengte, breedte, tonnage, naam)
+        {
+
+        }
+
+       
         public LadingOlietanker lading { get; set; }
     }
 }

@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|solutionrelative:linqoef\\trainingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|c:\\users\\elyne\\prog_gevorderd\\linqoef\\linqoef\\trainingsdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|C:\\Users\\elyne\\Prog_gevorderd\\LinqOef\\linqoef\\trainingsdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{599DB6D5-894F-49F3-AC65-36C099E0A646}|LinqOef\\LinqOef.csproj|solutionrelative:linqoef\\trainingsdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -34,8 +38,7 @@
               "RelativeToolTip": "LinqOef\\TrainingsDataRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:59:40.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T18:59:40.145Z"
             },
             {
               "$type": "Document",
@@ -47,8 +50,7 @@
               "RelativeToolTip": "LinqOef\\Trainingdata.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:37:03.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T17:37:03.647Z"
             },
             {
               "$type": "Document",
@@ -58,7 +60,7 @@
               "RelativeDocumentMoniker": "LinqOef\\Program.cs",
               "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\LinqOef\\LinqOef\\Program.cs",
               "RelativeToolTip": "LinqOef\\Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAHgAAAAAAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAAAG8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T17:34:13.261Z",
               "EditorCaption": ""

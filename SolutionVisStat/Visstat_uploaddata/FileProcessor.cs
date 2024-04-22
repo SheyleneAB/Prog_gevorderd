@@ -94,7 +94,7 @@ namespace Visstat_uploaddata
                                 }
                             }
                         }
-                    } // <- missing curly brace for the while loop
+                    } 
 
                 }
                 return data.Values.ToList();

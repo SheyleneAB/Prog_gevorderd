@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Overerving.BL
 {
-    public class Containerschip : Schip
+    public class Containerschip : CargoSchip
     {
         public int Aantalcontainers;
-        public double? Cargowaarde;
-        public Containerschip(double? cargowaarde)
+
+        public Containerschip(int aantalcontainers, double lengte, double breedte, double tonnage, string naam, double cargowaarde) 
+            : base(lengte, breedte, tonnage, naam, cargowaarde)
         {
-            Cargowaarde = cargowaarde;
+            Aantalcontainers = aantalcontainers;
         }
+
     }
 }

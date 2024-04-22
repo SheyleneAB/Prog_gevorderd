@@ -10,9 +10,16 @@ namespace Overerving.BL
     {
         public string naam;
         public List<Schip> Schepen;
+
+        public Vloot(string naam, List<Schip> schepen)
+        {
+            this.naam = naam;
+            Schepen = schepen;
+        }
+
         public void VoegSchipToe(Schip schip)
         {
-            if (!Schepen.Contains(schip))
+            if (schip != null || !Schepen.Contains(schip))
             {
                 Schepen.Add(schip);
             }
@@ -20,12 +27,30 @@ namespace Overerving.BL
 
         public void VerwijderSchip(Schip schip)
         {
-            if (Schepen.Count != 1)
+            if (Schepen.Count != 1 || schip != null)
             {
                 Schepen.Remove(schip);
             }
             else throw new Exception("verwijderschip");
         }
-        /* aanpassen van onlyreadlist naar private bij schepen */
+        public override bool Equals(object obj)
+        {
+            if (obj is Vloot)
+            {
+                Vloot compVloot = (Vloot)obj;
+
+
+
+                return Schepen == compVloot.Schepen &&
+                       naam == compVloot.naam;
+                
+            }
+            else return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Schepen, naam);
+        }
     }
 }

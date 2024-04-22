@@ -15,6 +15,7 @@ using Visstat_uploaddata;
 using VisStatsBL.interfaces;
 using VisStatsBL.Manager;
 using VisStatsBL.MODEL;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace VisstatsUI_Maand
 {
@@ -140,7 +141,13 @@ namespace VisstatsUI_Maand
 
         private void ToonStatistieken_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Eenheid eenheid;
+            if ((bool)KgRadioButton.IsChecked) { eenheid = Eenheid.kg; } else eenheid = Eenheid.euro;
+            List<Maandvangst> vangst = visStatsManager.GeefMaandVangst(GeselecteerdeJaren.ToList(), 
+                GeselecteerdeHavens.ToList(), (Vissoort)VissoortComboBox.SelectedItem, eenheid);
+
+            StatistiekenWindow w = new StatistiekenWindow(vangst, eenheid);
+            w.ShowDialog();
         }
     }
 }
