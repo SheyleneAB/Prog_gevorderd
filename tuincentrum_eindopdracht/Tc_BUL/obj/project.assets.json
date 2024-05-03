@@ -1,0 +1,115 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "TC_SQLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TC_SQLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TC_SQLL.dll": {}
+        }
+      },
+      "TC_UploadD/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TC_UploadD.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TC_UploadD.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TC_SQLL/1.0.0": {
+      "type": "project",
+      "path": "../TC_SQLL/TC_SQLL.csproj",
+      "msbuildProject": "../TC_SQLL/TC_SQLL.csproj"
+    },
+    "TC_UploadD/1.0.0": {
+      "type": "project",
+      "path": "../TC_UploadD/TC_UploadD.csproj",
+      "msbuildProject": "../TC_UploadD/TC_UploadD.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "TC_SQLL >= 1.0.0",
+      "TC_UploadD >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\elyne\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Tc_BUL.csproj",
+      "projectName": "Tc_BUL",
+      "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Tc_BUL.csproj",
+      "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\TC_SQLL\\TC_SQLL.csproj": {
+              "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\TC_SQLL\\TC_SQLL.csproj"
+            },
+            "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\TC_UploadD\\TC_UploadD.csproj": {
+              "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\TC_UploadD\\TC_UploadD.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

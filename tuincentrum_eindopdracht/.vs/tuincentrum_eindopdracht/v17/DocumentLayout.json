@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5620A893-29EE-4B49-B6F9-1A4D0BABFD90}|Tc_BUL\\Tc_BUL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum_eindopdracht\\tc_bul\\model\\offerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620A893-29EE-4B49-B6F9-1A4D0BABFD90}|Tc_BUL\\Tc_BUL.csproj|solutionrelative:tc_bul\\model\\offerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5620A893-29EE-4B49-B6F9-1A4D0BABFD90}|Tc_BUL\\Tc_BUL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum_eindopdracht\\tc_bul\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5620A893-29EE-4B49-B6F9-1A4D0BABFD90}|Tc_BUL\\Tc_BUL.csproj|solutionrelative:tc_bul\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Offerte.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Model\\Offerte.cs",
+              "RelativeDocumentMoniker": "Tc_BUL\\Model\\Offerte.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Model\\Offerte.cs",
+              "RelativeToolTip": "Tc_BUL\\Model\\Offerte.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T07:40:48.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Model\\Product.cs",
+              "RelativeDocumentMoniker": "Tc_BUL\\Model\\Product.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\tuincentrum_eindopdracht\\Tc_BUL\\Model\\Product.cs",
+              "RelativeToolTip": "Tc_BUL\\Model\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T07:40:36.622Z",
+              "EditorCaption": ""
             }
           ]
         }
