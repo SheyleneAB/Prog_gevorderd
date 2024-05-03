@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\veerboot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\veerboot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\passagiersschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\passagiersschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\overerving.bl\\gastanker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\gastanker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\overerving.bl\\tankerschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\tankerschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\schip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\schip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AAAD9D33-C86E-45C1-AEFD-41A40D0D7F89}|Unittesten\\Unittesten.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\unittesten\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAAD9D33-C86E-45C1-AEFD-41A40D0D7F89}|Unittesten\\Unittesten.csproj|solutionrelative:unittesten\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +35,12 @@
       "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\vloot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\overerving.bl\\olietanker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\olietanker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\olietanker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\overerving.bl\\veerboot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\veerboot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|c:\\users\\elyne\\prog_gevorderd\\collectionsoverervingoefening\\overerving.bl\\passagiersschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\passagiersschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\cruiseschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\cruiseschip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\schip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|solutionrelative:overerving.bl\\schip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A42D21AF-C204-4415-8FFF-968C74909AF9}|Overerving.BL\\Overerving.BL.csproj|C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\overerving.bl\\sleepboot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +74,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Olietanker.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Olietanker.cs",
-              "RelativeDocumentMoniker": "Overerving.BL\\Olietanker.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Olietanker.cs",
-              "RelativeToolTip": "Overerving.BL\\Olietanker.cs",
+              "DocumentIndex": 2,
+              "Title": "Gastanker.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Gastanker.cs",
+              "RelativeDocumentMoniker": "Overerving.BL\\Gastanker.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Gastanker.cs",
+              "RelativeToolTip": "Overerving.BL\\Gastanker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T12:00:50.198Z",
+              "WhenOpened": "2024-04-22T10:12:48.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "TankerSchip.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\TankerSchip.cs",
+              "RelativeDocumentMoniker": "Overerving.BL\\TankerSchip.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\TankerSchip.cs",
+              "RelativeToolTip": "Overerving.BL\\TankerSchip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:12:40.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Veerboot.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Veerboot.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Veerboot.cs",
@@ -92,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "PassagiersSchip.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\PassagiersSchip.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\PassagiersSchip.cs",
@@ -105,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Rederij.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Rederij.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Rederij.cs",
@@ -113,12 +134,11 @@
               "RelativeToolTip": "Overerving.BL\\Rederij.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAAAIYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T08:59:56.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T08:59:56.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Class1.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Class1.cs",
@@ -130,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Cruiseschip.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Cruiseschip.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Cruiseschip.cs",
@@ -138,12 +158,11 @@
               "RelativeToolTip": "Overerving.BL\\Cruiseschip.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T08:37:56.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T08:37:56.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Containerschip.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Containerschip.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Containerschip.cs",
@@ -155,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Vloot.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Vloot.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Vloot.cs",
@@ -163,12 +182,11 @@
               "RelativeToolTip": "Overerving.BL\\Vloot.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:27:03.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T07:27:03.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Unittesten\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Unittesten\\UnitTest1.cs",
@@ -181,7 +199,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Schip.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Schip.cs",
+              "RelativeDocumentMoniker": "Overerving.BL\\Schip.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Schip.cs",
+              "RelativeToolTip": "Overerving.BL\\Schip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:54:46.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Olietanker.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Olietanker.cs",
+              "RelativeDocumentMoniker": "Overerving.BL\\Olietanker.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Olietanker.cs",
+              "RelativeToolTip": "Overerving.BL\\Olietanker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:00:50.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Sleepboot.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Sleepboot.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\Sleepboot.cs",
@@ -193,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CargoSchip.cs",
               "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\CargoSchip.cs",
               "RelativeDocumentMoniker": "Overerving.BL\\CargoSchip.cs",
@@ -202,19 +245,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T08:37:51.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Schip.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Schip.cs",
-              "RelativeDocumentMoniker": "Overerving.BL\\Schip.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\CollectionsOverervingOefening\\Overerving.BL\\Schip.cs",
-              "RelativeToolTip": "Overerving.BL\\Schip.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:54:46.923Z",
-              "EditorCaption": ""
             }
           ]
         }
