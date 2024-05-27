@@ -1,0 +1,7 @@
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\bin\Debug\main.exe.config
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\bin\Debug\main.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\bin\Debug\main.pdb
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\obj\Debug\main.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\obj\Debug\main.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\obj\Debug\main.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\main\obj\Debug\main.pdb

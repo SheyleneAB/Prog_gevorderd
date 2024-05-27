@@ -1,0 +1,15 @@
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\bin\Debug\net8.0\TC_BL.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\bin\Debug\net8.0\TC_BL.deps.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\bin\Debug\net8.0\TC_BL.runtimeconfig.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\bin\Debug\net8.0\TC_BL.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\bin\Debug\net8.0\TC_BL.pdb
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.AssemblyInfoInputs.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.AssemblyInfo.cs
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.csproj.CoreCompileInputs.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.sourcelink.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\refint\TC_BL.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.pdb
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\TC_BL.genruntimeconfig.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_BL\obj\Debug\net8.0\ref\TC_BL.dll

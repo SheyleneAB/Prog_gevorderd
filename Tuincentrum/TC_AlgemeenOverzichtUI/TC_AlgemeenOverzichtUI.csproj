@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TC_DatauploadenUI\TC_DatauploadenUI.csproj" />
+    <ProjectReference Include="..\TC_KlantenOverzicht\TC_KlantenOverzicht.csproj" />
+    <ProjectReference Include="..\TC_OfferteOverzicht\TC_OfferteOverzicht.csproj" />
+  </ItemGroup>
+
+</Project>
