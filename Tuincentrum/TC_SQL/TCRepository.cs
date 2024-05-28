@@ -160,26 +160,93 @@ namespace TC_SQL
 
         public void SchrijfOfferte(Offerte offerte)
         {
-            string SQL = "INSERT INTO offerte( id, datum, klantid, afhalenbool, plaatsenbool) VALUES( @Id, @Datum, " +
-               "@Klantid, @Afhalenbool, @Plaatsenbool)";
+            string SQL = "INSERT INTO offerte(id, datum, klantid, afhalenbool, plaatsenbool) VALUES(@Id, @Datum, @Klantid, @Afhalenbool, @Plaatsenbool)";
+            string SQLprod = "INSERT INTO offerteklantaantal(offerteid, productid, aantal) VALUES(@Id, @ProductId, @Aantal)";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (SqlTransaction transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        using (SqlCommand cmd = conn.CreateCommand())
+                        {
+                            cmd.Transaction = transaction;
+                            cmd.CommandText = SQL;
+
+                            cmd.Parameters.Add(new SqlParameter("@Id", System.Data.SqlDbType.Int)).Value = offerte.Id;
+                            cmd.Parameters.Add(new SqlParameter("@Datum", System.Data.SqlDbType.DateTime)).Value = offerte.Datum;
+                            cmd.Parameters.Add(new SqlParameter("@Klantid", System.Data.SqlDbType.Int)).Value = offerte.Klant.Id;
+                            cmd.Parameters.Add(new SqlParameter("@Afhalenbool", System.Data.SqlDbType.Bit)).Value = offerte.AfhalenBool;
+                            cmd.Parameters.Add(new SqlParameter("@Plaatsenbool", System.Data.SqlDbType.Bit)).Value = offerte.PlaatsenBool;
+
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        using (SqlCommand cmdProd = conn.CreateCommand())
+                        {
+                            cmdProd.Transaction = transaction;
+                            cmdProd.CommandText = SQLprod;
+
+                            cmdProd.Parameters.Add(new SqlParameter("@Id", System.Data.SqlDbType.Int));
+                            cmdProd.Parameters.Add(new SqlParameter("@ProductId", System.Data.SqlDbType.Int));
+                            cmdProd.Parameters.Add(new SqlParameter("@Aantal", System.Data.SqlDbType.Int));
+
+                            foreach (var producten in offerte.Producten)
+                            {
+                                cmdProd.Parameters["@Id"].Value = offerte.Id;
+                                cmdProd.Parameters["@ProductId"].Value = producten.Key.Id;
+                                cmdProd.Parameters["@Aantal"].Value = producten.Value;
+
+                                cmdProd.ExecuteNonQuery();
+                            }
+                        }
+
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+            }
+        }
+        public Dictionary<int, Product> LeesAlleProducten()
+        {
+            string SQL = "SELECT * FROM Product";
+            Dictionary<int, Product> IdProductenlijst = new Dictionary<int, Product>();
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             using (SqlCommand cmd = conn.CreateCommand())
             {
-                conn.Open();
-                cmd.CommandText = SQL;
-                cmd.Parameters.Add(new SqlParameter("@Id", System.Data.SqlDbType.Int));
-                cmd.Parameters["@Id"].Value = offerte.Id;
-                cmd.Parameters.Add(new SqlParameter("@Datum", System.Data.SqlDbType.DateTime));
-                cmd.Parameters["@Datum"].Value = offerte.Datum;
-                cmd.Parameters.Add(new SqlParameter("@Klantid", System.Data.SqlDbType.Int));
-                cmd.Parameters["@Klantid"].Value = offerte.Klant.Id;
-                cmd.Parameters.Add(new SqlParameter("@Afhalenbool", System.Data.SqlDbType.Bit));
-                cmd.Parameters["@Afhalenbool"].Value = offerte.AfhalenBool;
-                cmd.Parameters.Add(new SqlParameter("@Plaatsenbool", System.Data.SqlDbType.Bit));
-                cmd.Parameters["@Plaatsenbool"].Value = offerte.PlaatsenBool;
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    using (IDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int id = reader.GetInt32(reader.GetOrdinal("id"));
+                            string nednaam = reader.GetString(reader.GetOrdinal("nednaam"));
+                            string wetnaam = reader.GetString(reader.GetOrdinal("wetnaam"));
+                            string beschrijving = reader.GetString(reader.GetOrdinal("beschrijving"));
+                            double prijs = reader.GetDouble(reader.GetOrdinal("prijs"));
 
-                cmd.ExecuteNonQuery();
+                            Product product = new Product(id, nednaam, wetnaam, beschrijving, prijs);
+                            IdProductenlijst.Add(product.Id, product);
+                        }
+                    }
+                    return IdProductenlijst;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("leessoorten", ex);
+                }
             }
         }
+
     }
 }

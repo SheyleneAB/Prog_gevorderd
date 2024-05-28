@@ -42,10 +42,11 @@ namespace TC_BL.Manager
             }
 
         }
-        public void UploadOffertes(string fileName)
+        public void UploadOffertes(string fileName, string fileName2)
         {
             Dictionary<int, Klant> klanten = TCRepository.LeesAlleKlanten();
-            Dictionary<int, Offerte> gelezenofferte = fileProcessor.LeesOffertes(fileName, klanten);
+            Dictionary<int, Product> producten = TCRepository.LeesAlleProducten();
+            Dictionary<int, Offerte> gelezenofferte = fileProcessor.LeesOffertes(fileName, fileName2, klanten, producten);
 
             Dictionary<int, Offerte> offertelijst = MaakOfferte(gelezenofferte);
             foreach (Offerte offerte in offertelijst.Values)

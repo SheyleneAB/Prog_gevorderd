@@ -16,6 +16,7 @@ namespace TC_BL.Interfaces
         public Dictionary<int, Klant> LeesAlleKlanten();
         bool HeeftOfferte(Offerte offerte);
         void SchrijfOfferte(Offerte offerte);
-        // implement leesproducten!!!
+        public Dictionary<int, Product> LeesAlleProducten();
+       
     }
 }

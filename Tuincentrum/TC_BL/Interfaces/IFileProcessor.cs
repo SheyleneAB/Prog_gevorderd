@@ -11,6 +11,7 @@ namespace TC_BL.Interfaces
     {
         public List<Klant> LeesKlanten(string fileName);
         public List<Product> LeesProducten(string fileName);
-        public Dictionary<int, Offerte> LeesOffertes(string fileName, Dictionary<int, Klant> klanten);
+        public Dictionary<int, Offerte> LeesOffertes(string fileName, string fileName2,
+        Dictionary<int, Klant> klanten, Dictionary<int, Product> alleproducten);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Identity.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,16 +54,18 @@ namespace TC_SQL
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string pattern = @"(\d+)\|([^|]+)\|([^|]+)\|(\d+)\|([^|]+)";
+                        string pattern = @"^\s*(\d+)\|([^|]+)\|('[^']*'|\S+)\|(\d+|[\d-]+)\|(.+)$";
+
+
                         Match match = Regex.Match(line, pattern);
 
                         if (match.Success)
                         {
                             int id = int.Parse(match.Groups[1].Value);
-                            string nedname = match.Groups[2].Value.Trim();
-                            string wetnaam = match.Groups[3].Value.Trim();
-                            double prijs = double.Parse(match.Groups[4].Value.Trim());
-                            string beschrijving = match.Groups[5].Value.Trim();
+                            string nedname = match.Groups[2].Value;
+                            string wetnaam = match.Groups[3].Value;
+                            double prijs = double.Parse(match.Groups[4].Value);
+                            string beschrijving = match.Groups[5].Value;
 
                             producten.Add(new Product
                             {
@@ -82,10 +85,10 @@ namespace TC_SQL
             catch (Exception ex) { throw new Exception($"FileProcessor-LeesProducten [{fileName}]"); }
 
         }
-        public Dictionary<int, Offerte> LeesOffertes(string fileName, Dictionary<int, Klant> klanten)
+        public Dictionary<int, Offerte> LeesOffertes(string fileName, string fileName2, 
+            Dictionary<int, Klant> klanten, Dictionary<int,Product> alleproducten)
         {
             Dictionary<int, Offerte> offertes = new Dictionary<int, Offerte>();
-            List<Offerte> offertelist = new List<Offerte>();
             try
             {
 
@@ -117,6 +120,10 @@ namespace TC_SQL
                         }
                     }
                 }
+                LeesOfferteProducten(offertes,fileName2, alleproducten);
+
+
+                
                 return offertes;
             }
             catch (Exception ex)
@@ -124,7 +131,35 @@ namespace TC_SQL
                 throw new Exception($"FileProcessor-LeesOffertes [{fileName}]");
             }
         }
+        public void LeesOfferteProducten(Dictionary<int, Offerte> offertes,string fileName2, Dictionary<int, Product> alleproducten)
+        {
+            try
+            {
+                Dictionary<Product, int> producten = new Dictionary<Product, int>();
+                using (StreamReader reader2 = new StreamReader(fileName2))
+                {
+                    string line;
+                    while ((line = reader2.ReadLine()) != null)
+                    {
+                        string pattern = @"^(\d+)\|(\d+)\|(\d+)$";
 
+                        Match match = Regex.Match(line, pattern);
+
+                        if (match.Success)
+                        {
+                            int id = int.Parse(match.Groups[1].Value);
+                            int productid = int.Parse(match.Groups[2].Value);
+                            int aantal = int.Parse(match.Groups[3].Value);
+
+                            offertes[id].VoegProductToe(alleproducten[productid], aantal);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { throw new Exception($"FileProcessor-LeesOfferteProducten [{fileName2}]"); }
+
+        }
+       
 
     }
 }

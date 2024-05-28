@@ -98,15 +98,32 @@ namespace TC_DatauploadenUI
             }
             else OffertesFileListBox.ItemsSource = null;
         }
+        private void Button_Click_OfferteProducten(object sender, RoutedEventArgs e)
+        {
+            bool? result = openFileDialog.ShowDialog();
+            if (result == true)
+            {
+                var fileNames = openFileDialog.FileNames;
+                OfferteProductenFileListBox.ItemsSource = fileNames;
+                openFileDialog.FileName = null;
+            }
+            else OfferteProductenFileListBox.ItemsSource = null;
+
+        }
 
         private void Button_Click_UploadOffertes(object sender, RoutedEventArgs e)
         {
             foreach (string fileName in OffertesFileListBox.ItemsSource)
             {
-                TCManager.UploadOffertes(fileName);
+                foreach(string fileName2 in OfferteProductenFileListBox.ItemsSource)
+                {
+                    TCManager.UploadOffertes(fileName, fileName2);
+                }
             }
             MessageBox.Show("Upload klaar", "Offertes");
 
         }
+
+       
     }
 }

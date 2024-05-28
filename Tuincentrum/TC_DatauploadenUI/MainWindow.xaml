@@ -16,6 +16,8 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -42,7 +44,9 @@
 
             <ListBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="2"
           Name="OffertesFileListBox" IsEnabled="False"/>
-
+            <Button Grid.Row="7" Grid.Column="0" Content="OfferteProducten" Margin="2" Click="Button_Click_OfferteProducten"/>
+            <ListBox Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="2"
+            Name="OfferteProductenFileListBox" IsEnabled="False"/>
 
         </Grid>
     </Grid>
