@@ -230,7 +230,14 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

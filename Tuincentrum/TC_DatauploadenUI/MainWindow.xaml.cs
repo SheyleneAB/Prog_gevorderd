@@ -46,8 +46,6 @@ namespace TC_DatauploadenUI
                 TCManager.UploadKlanten(fileName);
             }
             MessageBox.Show("Upload klaar", "Klanten");
-
-
         }
 
         private void Button_Click_Klanten(object sender, RoutedEventArgs e)
@@ -60,7 +58,6 @@ namespace TC_DatauploadenUI
                 openFileDialog.FileName = null;
             }
             else KlantenFileListBox.ItemsSource = null;
-
         }
 
         private void Button_Click_Producten(object sender, RoutedEventArgs e)
@@ -73,7 +70,6 @@ namespace TC_DatauploadenUI
                 openFileDialog.FileName = null;
             }
             else ProductenFileListBox.ItemsSource = null;
-
         }
 
         private void Button_Click_UploadProducten(object sender, RoutedEventArgs e)
@@ -83,12 +79,9 @@ namespace TC_DatauploadenUI
                 TCManager.UploadProducten(fileName);
             }
             MessageBox.Show("Upload klaar", "Producten");
-
         }
-        // Heeft werk nodig
         private void Button_Click_Offerte(object sender, RoutedEventArgs e)
         {
-
             bool? result = openFileDialog.ShowDialog();
             if (result == true)
             {
@@ -108,7 +101,6 @@ namespace TC_DatauploadenUI
                 openFileDialog.FileName = null;
             }
             else OfferteProductenFileListBox.ItemsSource = null;
-
         }
 
         private void Button_Click_UploadOffertes(object sender, RoutedEventArgs e)
@@ -121,9 +113,6 @@ namespace TC_DatauploadenUI
                 }
             }
             MessageBox.Show("Upload klaar", "Offertes");
-
         }
-
-       
     }
 }

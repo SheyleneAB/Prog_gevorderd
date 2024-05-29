@@ -3,7 +3,7 @@
 namespace TC_BL.Exceptions
 {
     [Serializable]
-    internal class DomeinException : Exception
+    public class DomeinException : Exception
     {
         public DomeinException()
         {

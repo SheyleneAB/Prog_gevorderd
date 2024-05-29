@@ -56,7 +56,7 @@ namespace TC_BL.Manager
             }
         }
 
-        private Dictionary<int, Offerte> MaakOfferte(Dictionary<int, Offerte> offertes)
+        public Dictionary<int, Offerte> MaakOfferte(Dictionary<int, Offerte> offertes)
         {
             Dictionary<int, Offerte> juisteoffertes = new();
             foreach (Offerte offerte in offertes.Values)
@@ -77,7 +77,7 @@ namespace TC_BL.Manager
 
         }
 
-        private List <Klant> MaakKlanten(List<Klant> gelezenklanten)
+        public List <Klant> MaakKlanten(List<Klant> gelezenklanten)
         {
             Dictionary<int , Klant> klanten = new();
             foreach (Klant klant in gelezenklanten)
@@ -96,7 +96,7 @@ namespace TC_BL.Manager
             }
             return klanten.Values.ToList();
         }
-        private List<Product> MaakProducten(List<Product> gelezenproducten)
+        public List<Product> MaakProducten(List<Product> gelezenproducten)
         {
             Dictionary<int, Product> Producten = new();
             foreach (Product Product in gelezenproducten)
