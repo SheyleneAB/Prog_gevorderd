@@ -17,6 +17,7 @@ namespace TC_BL.Interfaces
         bool HeeftOfferte(Offerte offerte);
         void SchrijfOfferte(Offerte offerte);
         public Dictionary<int, Product> LeesAlleProducten();
-       
+        Klantengeg LeesKlantengegnaam(string klantnaam);
+        Klantengeg LeesKlantengegid(int klantid);
     }
 }

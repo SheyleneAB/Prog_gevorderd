@@ -63,12 +63,11 @@ namespace TC_KlantenOverzicht
 
                 else 
                 {
-                  /* List<Jaarvangst> vangst = visStatsManager.GeefVangst((int)JaarComboBox.SelectedItem, (Haven)HavensComboBox.SelectedItem,
-                GeselecteerdeVissoorten.ToList(), eenheid);
+                 
+                    Klantengeg klantengeg = TCManager.GeefKlantengegevensbyid(klantId);
 
-                    StatistiekenWindow w = new StatistiekenWindow((int)JaarComboBox.SelectedItem, (Haven)HavensComboBox.SelectedItem, eenheid, vangst);
-                    w.ShowDialog();*/
-
+                    KlantopzoekenUI w = new KlantopzoekenUI(klantengeg);
+                    w.ShowDialog();
                 }
             }
             else
@@ -79,12 +78,10 @@ namespace TC_KlantenOverzicht
                 }
                 else
                 {
-                    /* List<Jaarvangst> vangst = visStatsManager.GeefVangst((int)JaarComboBox.SelectedItem, (Haven)HavensComboBox.SelectedItem,
-                GeselecteerdeVissoorten.ToList(), eenheid);
+                   Klantengeg klantengeg = TCManager.GeefKlantengegevensbynaam(input);
 
-                    StatistiekenWindow w = new StatistiekenWindow((int)JaarComboBox.SelectedItem, (Haven)HavensComboBox.SelectedItem, eenheid, vangst);
-                    w.ShowDialog();*/
-
+                    KlantopzoekenUI w = new KlantopzoekenUI(klantengeg);
+                    w.ShowDialog(); 
                 }
             }
         }

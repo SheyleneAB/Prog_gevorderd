@@ -89,3 +89,8 @@ C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\obj\Debug\net8.
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\obj\Debug\net8.0-windows\TC_AlgemeenOverzichtUI.pdb
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\obj\Debug\net8.0-windows\TC_AlgemeenOverzichtUI.genruntimeconfig.cache
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\obj\Debug\net8.0-windows\ref\TC_AlgemeenOverzichtUI.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.deps.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.runtimeconfig.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.pdb

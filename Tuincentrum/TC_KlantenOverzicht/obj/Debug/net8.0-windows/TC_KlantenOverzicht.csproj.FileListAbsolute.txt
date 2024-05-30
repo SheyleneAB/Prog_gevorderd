@@ -74,3 +74,5 @@ C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\bin\Debug\net8.0-w
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\bin\Debug\net8.0-windows\TC_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\obj\Debug\net8.0-windows\TC_KlantenOverzicht.csproj.AssemblyReference.cache
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\obj\Debug\net8.0-windows\TC_Klant.36601DB3.Up2Date
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\obj\Debug\net8.0-windows\KlantopzoekenUI.g.cs
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_KlantenOverzicht\obj\Debug\net8.0-windows\KlantopzoekenUI.baml

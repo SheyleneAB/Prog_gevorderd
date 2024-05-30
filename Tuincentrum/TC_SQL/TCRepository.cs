@@ -248,5 +248,190 @@ namespace TC_SQL
             }
         }
 
+        public List<Offerte> LeesAlleOffertes()
+        {
+            List<Offerte> offertes = new List<Offerte>();
+
+            return offertes;
+        }
+
+        public Klantengeg LeesKlantengegnaam(string klantnaam)
+        {
+           
+            Klantengeg klantengeg = null;
+            string SQL = "SELECT k.id AS klant_id, k.naam, k.adres, o.id AS offerte_id, " +
+                         "o.datum, o.plaatsenbool, o.afhalenbool, ok.productid, ok.aantal, p.prijs AS product_prijs " +
+                         "FROM klant k " +
+                         "JOIN offerte o ON k.id = o.klantid " +
+                         "JOIN offerteklantaantal ok ON o.id = ok.offerteid " +
+                         "JOIN product p ON ok.productid = p.id " +
+                         "WHERE k.naam = @Naam;";
+
+            Dictionary<int, Product> products = LeesAlleProducten();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    cmd.Parameters.AddWithValue("@Naam", klantnaam);
+
+                    using (IDataReader reader = cmd.ExecuteReader())
+                    {
+                        List<Offerte> offertes = new List<Offerte>();
+                        while (reader.Read())
+                        {
+                            if (klantengeg == null)
+                            {
+                                int klant_id = reader.GetInt32(reader.GetOrdinal("klant_id"));
+                                string naam = reader.GetString(reader.GetOrdinal("naam"));
+                                string adres = reader.GetString(reader.GetOrdinal("adres"));
+                                klantengeg = new Klantengeg(klant_id, naam, adres, 0, new List<Offerte>(), 0.0);
+                            }
+
+                            int offerte_id = reader.GetInt32(reader.GetOrdinal("offerte_id"));
+                            DateTime datum = reader.GetDateTime(reader.GetOrdinal("datum"));
+                            bool plaatsenBool = reader.GetBoolean(reader.GetOrdinal("plaatsenbool"));
+                            bool afhalenBool = reader.GetBoolean(reader.GetOrdinal("afhalenbool"));
+
+                            Offerte offerte = offertes.FirstOrDefault(o => o.Id == offerte_id);
+                            if (offerte == null)
+                            {
+                                offerte = new Offerte(datum, new Klant { Id = klantengeg.Id, Naam = klantengeg.Naam, Adres = klantengeg.Adres }, afhalenBool, plaatsenBool)
+                                {
+                                    Id = offerte_id
+                                };
+                                offertes.Add(offerte);
+                            }
+
+                            int productid = reader.GetInt32(reader.GetOrdinal("productid"));
+                            int aantal = reader.GetInt32(reader.GetOrdinal("aantal"));
+                            double product_prijs = reader.GetDouble(reader.GetOrdinal("product_prijs"));
+
+                            if (products.TryGetValue(productid, out Product product))
+                            {
+                                product.Prijs = product_prijs;
+                                if (!offerte.Producten.ContainsKey(product))
+                                {
+                                    offerte.VoegProductToe(product, aantal);
+                                }
+                            }
+                        }
+
+                        if (klantengeg != null)
+                        {
+                            double totaalprijs = 0;
+                            foreach (var offerte in offertes)
+                            {
+                                totaalprijs += offerte.prijsberekenen();
+                            }
+
+                            klantengeg.Aantaloffertes = offertes.Count;
+                            klantengeg.Offertenummber = offertes;
+                            klantengeg.TotaalPrijs = totaalprijs;
+                        }
+
+                        return klantengeg;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error reading customer data", ex);
+                }
+            }
+        }
+       
+
+        public Klantengeg LeesKlantengegid(int klantId)
+        {
+            Klantengeg klantengeg = null;
+            string SQL = "SELECT k.id AS klant_id, k.naam, k.adres, o.id AS offerte_id, " +
+                         "o.datum, o.plaatsenbool, o.afhalenbool, ok.productid, ok.aantal, p.prijs AS product_prijs " +
+                         "FROM klant k " +
+                         "JOIN offerte o ON k.id = o.klantid " +
+                         "JOIN offerteklantaantal ok ON o.id = ok.offerteid " +
+                         "JOIN product p ON ok.productid = p.id " +
+                         "WHERE k.id = @Id;";
+
+            Dictionary<int, Product> products = LeesAlleProducten();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlCommand cmd = conn.CreateCommand())
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.CommandText = SQL;
+                    cmd.Parameters.AddWithValue("@Id", klantId);
+
+                    using (IDataReader reader = cmd.ExecuteReader())
+                    {
+                        List<Offerte> offertes = new List<Offerte>();
+                        while (reader.Read())
+                        {
+                            if (klantengeg == null)
+                            {
+                                int klant_id = reader.GetInt32(reader.GetOrdinal("klant_id"));
+                                string naam = reader.GetString(reader.GetOrdinal("naam"));
+                                string adres = reader.GetString(reader.GetOrdinal("adres"));
+                                klantengeg = new Klantengeg(klant_id, naam, adres, 0, new List<Offerte>(), 0.0);
+                            }
+
+                            int offerte_id = reader.GetInt32(reader.GetOrdinal("offerte_id"));
+                            DateTime datum = reader.GetDateTime(reader.GetOrdinal("datum"));
+                            bool plaatsenBool = reader.GetBoolean(reader.GetOrdinal("plaatsenbool"));
+                            bool afhalenBool = reader.GetBoolean(reader.GetOrdinal("afhalenbool"));
+
+                            Offerte offerte = offertes.FirstOrDefault(o => o.Id == offerte_id);
+                            if (offerte == null)
+                            {
+                                offerte = new Offerte(datum, new Klant { Id = klantId, Naam = klantengeg.Naam, Adres = klantengeg.Adres }, afhalenBool, plaatsenBool)
+                                {
+                                    Id = offerte_id
+                                };
+                                offertes.Add(offerte);
+                            }
+
+                            int productid = reader.GetInt32(reader.GetOrdinal("productid"));
+                            int aantal = reader.GetInt32(reader.GetOrdinal("aantal"));
+                            double product_prijs = reader.GetDouble(reader.GetOrdinal("product_prijs"));
+
+                            if (products.TryGetValue(productid, out Product product))
+                            {
+                                product.Prijs = product_prijs;
+                                if (!offerte.Producten.ContainsKey(product))
+                                {
+                                    offerte.VoegProductToe(product, aantal);
+                                }
+                            }
+                        }
+
+                        if (klantengeg != null)
+                        {
+                            double totaalprijs = 0;
+                            foreach (var offerte in offertes)
+                            {
+                                totaalprijs += offerte.prijsberekenen();
+                            }
+
+                            klantengeg.Aantaloffertes = offertes.Count;
+                            klantengeg.Offertenummber = offertes;
+                            klantengeg.TotaalPrijs = totaalprijs;
+                        }
+
+                        return klantengeg;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error reading customer data", ex);
+                }
+            }
+        }
+
     }
+        
+    
 }

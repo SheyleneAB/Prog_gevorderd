@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TC_OfferteOverzicht", "TC_O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TC_KlantenOverzicht", "TC_KlantenOverzicht\TC_KlantenOverzicht.csproj", "{3C475ABD-38FB-4A0D-BB5C-E789A7F5D681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCUnittesten", "TCUnittesten\TCUnittesten.csproj", "{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCUnittesten", "TCUnittesten\TCUnittesten.csproj", "{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferteAanmakenUI", "OfferteAanmakenUI\OfferteAanmakenUI.csproj", "{7F66D2CE-86BA-4515-BD96-05294A10DA9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F66D2CE-86BA-4515-BD96-05294A10DA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F66D2CE-86BA-4515-BD96-05294A10DA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F66D2CE-86BA-4515-BD96-05294A10DA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F66D2CE-86BA-4515-BD96-05294A10DA9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

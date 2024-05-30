@@ -23,7 +23,8 @@ namespace TC_OfferteOverzicht
 
         private void Otoev_Click(object sender, RoutedEventArgs e)
         {
-
+            OfferteAanmakenUI.MainWindow w = new OfferteAanmakenUI.MainWindow();
+            w.Show();
         }
 
         private void Offerte_Click(object sender, RoutedEventArgs e)
