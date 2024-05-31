@@ -61,7 +61,7 @@ namespace TC_KlantenOverzicht {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TC_KlantenOverzicht;V1.0.0.0;component/klantopzoekenui.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TC_KlantenOverzicht;component/klantopzoekenui.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\KlantopzoekenUI.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

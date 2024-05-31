@@ -79,3 +79,8 @@ C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-w
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_SQL.pdb
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\obj\Debug\net8.0-windows\TC_OfferteOverzicht.csproj.AssemblyReference.cache
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\obj\Debug\net8.0-windows\TC_Offer.5FA14162.Up2Date
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.deps.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.runtimeconfig.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_OfferteOverzicht\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.pdb

@@ -747,6 +747,19 @@
         "runtime": {
           "bin/placeholder/TC_SQL.dll": {}
         }
+      },
+      "TC_ZoekOfferteUI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/TC_ZoekOfferteUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TC_ZoekOfferteUI.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -2066,11 +2079,17 @@
       "type": "project",
       "path": "../TC_SQL/TC_SQL.csproj",
       "msbuildProject": "../TC_SQL/TC_SQL.csproj"
+    },
+    "TC_ZoekOfferteUI/1.0.0": {
+      "type": "project",
+      "path": "../TC_ZoekOfferteUI/TC_ZoekOfferteUI.csproj",
+      "msbuildProject": "../TC_ZoekOfferteUI/TC_ZoekOfferteUI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "OfferteAanmakenUI >= 1.0.0"
+      "OfferteAanmakenUI >= 1.0.0",
+      "TC_ZoekOfferteUI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2102,6 +2121,9 @@
           "projectReferences": {
             "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj": {
               "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj"
+            },
+            "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj": {
+              "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj"
             }
           }
         }
@@ -2142,5 +2164,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

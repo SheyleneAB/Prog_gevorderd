@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,11 @@ namespace TC_BL.Manager
                 if (!TCRepository.HeeftOfferte(offerte))
                     TCRepository.SchrijfOfferte(offerte);
             }
+        }
+        public void SchrijfeenOfferte(Offerte offerte)
+        {
+            if (!TCRepository.HeeftOfferte(offerte))
+                TCRepository.SchrijfOfferte(offerte);
         }
 
         public Dictionary<int, Offerte> MaakOfferte(Dictionary<int, Offerte> offertes)
@@ -133,6 +139,36 @@ namespace TC_BL.Manager
             try
             {
                 return TCRepository.LeesKlantengegid(klantId);
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("GeefKlantengegid");
+            }
+        }
+        public List<Klant> GeefAlleKlanten()
+        {
+            Dictionary<int,Klant> klantdic = TCRepository.LeesAlleKlanten();
+            List<Klant> klantlist = new List<Klant>();
+            foreach (Klant klant in klantdic.Values) {
+                klantlist.Add(klant);
+            }
+
+            return klantlist;
+            
+
+        }
+
+        public List<Product> GeefProducten()
+        {
+            try
+            {
+                Dictionary<int,Product> Producten = TCRepository.LeesAlleProducten();
+                List<Product> ProductNames = new List<Product>();
+                foreach (Product product in Producten.Values) 
+                {
+                    ProductNames.Add(product);
+                }
+                return ProductNames;
             }
             catch (Exception)
             {

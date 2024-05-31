@@ -94,3 +94,8 @@ C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.exe
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.dll
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\OfferteAanmakenUI.pdb
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.deps.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.runtimeconfig.json
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.exe
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.dll
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_AlgemeenOverzichtUI\bin\Debug\net8.0-windows\TC_ZoekOfferteUI.pdb

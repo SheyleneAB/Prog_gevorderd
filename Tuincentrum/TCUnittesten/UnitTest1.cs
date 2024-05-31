@@ -98,7 +98,7 @@ namespace TCUnittesten
             Assert.True((offerte.Producten.Count == 1));
             offerte.VoegProductToe(product1, aantal);
             offerte.VoegProductToe(product2, aantal);
-
+            Assert.True((offerte.Producten.Count == 3));
             // Assert
             Assert.True(offerte.Producten.ContainsKey(product));
             Assert.Equal(aantal, offerte.Producten[product]);

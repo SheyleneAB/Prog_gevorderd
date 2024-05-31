@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "TC_OfferteOverzicht/1.0.0": {
         "dependencies": {
-          "OfferteAanmakenUI": "1.0.0"
+          "OfferteAanmakenUI": "1.0.0",
+          "TC_ZoekOfferteUI": "1.0.0"
         },
         "runtime": {
           "TC_OfferteOverzicht.dll": {}
@@ -420,6 +421,11 @@
         "runtime": {
           "TC_SQL.dll": {}
         }
+      },
+      "TC_ZoekOfferteUI/1.0.0": {
+        "runtime": {
+          "TC_ZoekOfferteUI.dll": {}
+        }
       }
     }
   },
@@ -706,6 +712,11 @@
       "sha512": ""
     },
     "TC_SQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TC_ZoekOfferteUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

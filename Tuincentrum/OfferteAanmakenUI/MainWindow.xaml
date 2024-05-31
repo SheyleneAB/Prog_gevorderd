@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Offerte Aanmaken" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Datum:" />
+            <DatePicker Name="dpDatum" />
+
+            <TextBlock Text="Klant Naam:" Margin="0,10,0,0"/>
+            <ComboBox Name="cbKlanten" HorizontalAlignment="Left" Width="500" DisplayMemberPath="Naam" Margin="0,0,10,0" />
+
+            <TextBlock Text="Afhalen:" Margin="0,10,0,0"/>
+            <CheckBox Name="cbAfhalen" />
+
+            <TextBlock Text="Plaatsen:" Margin="0,10,0,0"/>
+            <CheckBox Name="cbPlaatsen" />
+
+            <TextBlock Text="Producten:" Margin="0,10,0,0"/>
+            <StackPanel Orientation="Horizontal">
+                <ComboBox Name="cbProducten" Width="200" DisplayMemberPath="Nednaam"  Margin="0,0,10,0"/>
+                <TextBox Name="tbProductAantal" Width="100" />
+                <Button Name="btnProductToevoegen" Content="Toevoegen" Click="btnProductToevoegen_Click" Margin="10,0,0,0"/>
+            </StackPanel>
+
+            <ListBox Name="lbProducten" Margin="0,10,0,0" DisplayMemberPath="aantal" />
+
+            <Button Name="btnProductVerwijderen" Content="Verwijder Producten" Click="btnProductVerwijderen_Click" Margin="0,10,0,0"/>
+
+            <Button Name="btnOfferteAanmaken" Content="Offerte Aanmaken" Click="btnOfferteAanmaken_Click" Margin="0,20,0,0"/>
+        </StackPanel>
 
     </Grid>
 </Window>

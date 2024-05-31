@@ -29,7 +29,8 @@ namespace TC_OfferteOverzicht
 
         private void Offerte_Click(object sender, RoutedEventArgs e)
         {
-
+            TC_ZoekOfferteUI.MainWindow w = new TC_ZoekOfferteUI.MainWindow();
+            w.Show();
         }
 
         private void Update_Click(object sender, RoutedEventArgs e)

@@ -213,6 +213,61 @@ namespace TC_SQL
                 }
             }
         }
+        public Offerte HaalOfferteOp(int offerteId)
+        {
+            string SQL = "SELECT id, datum, klantid, afhalenbool, plaatsenbool FROM offerte WHERE id = @Id";
+            string SQLprod = "SELECT productid, aantal FROM offerteklantaantal WHERE offerteid = @Id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(SQL, conn))
+                {
+                    cmd.Parameters.Add(new SqlParameter("@Id", System.Data.SqlDbType.Int)).Value = offerteId;
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Offerte offerte = new Offerte
+                            {
+                                Id = reader.GetInt32(0),
+                                Datum = reader.GetDateTime(1),
+                                Klant = new Klant { Id = reader.GetInt32(2) },
+                                AfhalenBool = reader.GetBoolean(3),
+                                PlaatsenBool = reader.GetBoolean(4),
+                                Producten = new Dictionary<Product, int>()
+                            };
+
+                            reader.Close();
+
+                            using (SqlCommand cmdProd = new SqlCommand(SQLprod, conn))
+                            {
+                                cmdProd.Parameters.Add(new SqlParameter("@Id", System.Data.SqlDbType.Int)).Value = offerteId;
+
+                                using (SqlDataReader readerProd = cmdProd.ExecuteReader())
+                                {
+                                    while (readerProd.Read())
+                                    {
+                                        Product product = new Product { Id = readerProd.GetInt32(0) };
+                                        int aantal = readerProd.GetInt32(1);
+
+                                        offerte.VoegProductToe(product, aantal);
+                                    }
+                                }
+                            }
+
+                            return offerte;
+                        }
+                        else
+                        {
+                            throw new Exception("Offerte niet gevonden");
+                        }
+                    }
+                }
+            }
+        }
         public Dictionary<int, Product> LeesAlleProducten()
         {
             string SQL = "SELECT * FROM Product";
@@ -248,12 +303,64 @@ namespace TC_SQL
             }
         }
 
+        
         public List<Offerte> LeesAlleOffertes()
         {
-            List<Offerte> offertes = new List<Offerte>();
+            string SQL = "SELECT id, datum, klantid, afhalenbool, plaatsenbool FROM offerte WHERE id = @Id";
+            string SQLprod = "SELECT productid, aantal FROM offerteklantaantal";
+             List<Offerte> offertes = new List<Offerte>();
 
-            return offertes;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand(SQL, conn))
+                {
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            Offerte offerte = new Offerte
+                            {
+                                Id = reader.GetInt32(0),
+                                Datum = reader.GetDateTime(1),
+                                Klant = new Klant { Id = reader.GetInt32(2) },
+                                AfhalenBool = reader.GetBoolean(3),
+                                PlaatsenBool = reader.GetBoolean(4),
+                                Producten = new Dictionary<Product, int>()
+                            };
+                            offertes.Add(offerte);
+
+                            reader.Close();
+
+                            using (SqlCommand cmdProd = new SqlCommand(SQLprod, conn))
+                            {
+                               
+
+                                using (SqlDataReader readerProd = cmdProd.ExecuteReader())
+                                {
+                                    while (readerProd.Read())
+                                    {
+                                        Product product = new Product { Id = readerProd.GetInt32(0) };
+                                        int aantal = readerProd.GetInt32(1);
+
+                                        offerte.VoegProductToe(product, aantal);
+                                    }
+                                }
+                            }
+
+                            return offertes;
+                        }
+                        else
+                        {
+                            throw new Exception("Offerte niet gevonden");
+                        }
+                    }
+                }
+            }
         }
+
 
         public Klantengeg LeesKlantengegnaam(string klantnaam)
         {
