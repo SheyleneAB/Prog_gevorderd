@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TC_BL.Exceptions;
+
 
 namespace TC_BL.Model
 {
     public class Offerte
     {
         private Dictionary<Product, int> producten = new Dictionary<Product, int>();
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public DateTime Datum { get; set; }
         private Klant klant;
         public Offerte() { }
@@ -28,25 +30,46 @@ namespace TC_BL.Model
                     klant = value;
                 
         } }
-        public IReadOnlyDictionary< Product, int> Producten {
+        public Dictionary< Product, int> Producten {
             get { return producten; }
             set
             {
                 if (value == null || value.Count < 1) throw new DomeinException("offerte-setproducten");
-                producten = (Dictionary<Product, int>)value;
+                producten = new Dictionary<Product, int>(value);
             }
         }
         public bool AfhalenBool { get; set; }
         public bool PlaatsenBool { get; set; }
         public void VoegProductToe(Product product, int aantal)
         {
-            if ((producten.Keys.Contains(product)) || (product == null)) throw new DomeinException("offerte-voegproducten");
-            producten.Add(product, aantal );
+            if (product == null) throw new DomeinException("offerte-voegproducten");
+            if (producten.ContainsKey(product))
+            {
+                producten[product] += aantal;
+            }
+            else
+            {
+                producten.Add(product, aantal);
+            }
         }
-        public void VerwijderProduct(Product product)
+        public void VerwijderProduct(Product product, int aantal)
         {
-            if ((producten.Count == 1) || (!producten.Keys.Contains(product)) || (product == null)) throw new DomeinException("strip-verwijderauteur");
-            producten.Remove(product);
+            
+            if (product == null || !producten.ContainsKey(product))
+            {
+                throw new DomeinException("strip-verwijderauteur");
+            }
+
+            int huidigeAantal = producten[product];
+
+            if (aantal >= huidigeAantal)
+            {
+                producten.Remove(product);
+            }
+            else
+            {
+                producten[product] -= aantal;
+            }
         }
         public double prijsberekenen()
         {
@@ -91,5 +114,7 @@ namespace TC_BL.Model
             }
             return prijs;
         }
+        public double Berekenendeprijs => prijsberekenen();
+        
     }
 }

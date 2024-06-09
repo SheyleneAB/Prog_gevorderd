@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OfferteAanmakenUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Offerte aanmaken" Height="550" Width="800">
+    <Grid HorizontalAlignment="Left" Width="800">
         <StackPanel Margin="10">
             <TextBlock Text="Offerte Aanmaken" FontSize="20" FontWeight="Bold" Margin="0,0,0,10"/>
 
@@ -14,7 +14,16 @@
             <DatePicker Name="dpDatum" />
 
             <TextBlock Text="Klant Naam:" Margin="0,10,0,0"/>
-            <ComboBox Name="cbKlanten" HorizontalAlignment="Left" Width="500" DisplayMemberPath="Naam" Margin="0,0,10,0" />
+            <ComboBox Name="cbKlanten" HorizontalAlignment="Left" Width="500" Margin="0,0,10,0">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Naam}" Margin="0,0,10,0"/>
+                            <TextBlock Text="{Binding Adres}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
 
             <TextBlock Text="Afhalen:" Margin="0,10,0,0"/>
             <CheckBox Name="cbAfhalen" />
@@ -24,17 +33,48 @@
 
             <TextBlock Text="Producten:" Margin="0,10,0,0"/>
             <StackPanel Orientation="Horizontal">
-                <ComboBox Name="cbProducten" Width="200" DisplayMemberPath="Nednaam"  Margin="0,0,10,0"/>
+                <ComboBox Name="cbProducten" HorizontalAlignment="Left" Width="500" Margin="0,0,10,0" >
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Nednaam}" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding Wetnaam}" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding Beschrijving}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
                 <TextBox Name="tbProductAantal" Width="100" />
                 <Button Name="btnProductToevoegen" Content="Toevoegen" Click="btnProductToevoegen_Click" Margin="10,0,0,0"/>
             </StackPanel>
 
-            <ListBox Name="lbProducten" Margin="0,10,0,0" DisplayMemberPath="aantal" />
-
-            <Button Name="btnProductVerwijderen" Content="Verwijder Producten" Click="btnProductVerwijderen_Click" Margin="0,10,0,0"/>
-
+            <ListBox Name="lbProducten" Margin="0,10,0,10"  MaxHeight="100" MinHeight="50">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Key.Nednaam}" Margin="0,0,5,0"/>
+                            <TextBlock Text="{Binding Key.Wetnaam}" Margin="0,0,30,0"/>
+                            <TextBlock Text="Aantal = " Margin="0,0,2,0"/>
+                            <TextBlock Text="{Binding Value}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="tbAantalVerwijderen" Width="90" Margin="0,10,0,0"/>
+                <Button Name="btnProductVerwijderen" Content="Verwijder aantal producten" Click="btnAantalProductVerwijderen_Click" Margin="0,10,80,0"/>
+                <Button Name="btnVolledigProductVerwijderen" Content="Verwijder Product" Click="btneenProductVerwijderen_Click" Margin="0,10,80,0"/>
+                <Button Name="btnAlleProductVerwijderen" Content="Verwijder Alles" Click="btnAlleProductenVerwijderen_Click" Margin="0,10,0,0"/>
+            </StackPanel>
+           
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Totaal prijs" Margin="5"/>
+                <Label Name="prijslabel" Width="100" Margin="5"/>
+            </StackPanel>
             <Button Name="btnOfferteAanmaken" Content="Offerte Aanmaken" Click="btnOfferteAanmaken_Click" Margin="0,20,0,0"/>
         </StackPanel>
+        
+        
 
     </Grid>
 </Window>

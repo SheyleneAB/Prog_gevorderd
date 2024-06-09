@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using TC_BL.Exceptions;
 using TC_BL.Interfaces;
 using TC_BL.Model;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TC_BL.Manager
 {
@@ -14,12 +16,19 @@ namespace TC_BL.Manager
     {
         private IFileProcessor fileProcessor;
         private ITCRepository TCRepository;
+        private ITCRepository tCRepository;
 
+        public TCManager(ITCRepository tCRepository)
+        {
+            this.tCRepository = tCRepository;
+        }
         public TCManager(IFileProcessor fileProcessor, ITCRepository itcRepositrory)
         {
             this.fileProcessor = fileProcessor;
             this.TCRepository = itcRepositrory;
         }
+
+        
 
         public void UploadKlanten(string fileName)
         {
@@ -49,8 +58,7 @@ namespace TC_BL.Manager
             Dictionary<int, Product> producten = TCRepository.LeesAlleProducten();
             Dictionary<int, Offerte> gelezenofferte = fileProcessor.LeesOffertes(fileName, fileName2, klanten, producten);
 
-            Dictionary<int, Offerte> offertelijst = MaakOfferte(gelezenofferte);
-            foreach (Offerte offerte in offertelijst.Values)
+            foreach (Offerte offerte in gelezenofferte.Values)
             {
                 if (!TCRepository.HeeftOfferte(offerte))
                     TCRepository.SchrijfOfferte(offerte);
@@ -58,34 +66,21 @@ namespace TC_BL.Manager
         }
         public void SchrijfeenOfferte(Offerte offerte)
         {
-            if (!TCRepository.HeeftOfferte(offerte))
-                TCRepository.SchrijfOfferte(offerte);
-        }
-
-        public Dictionary<int, Offerte> MaakOfferte(Dictionary<int, Offerte> offertes)
-        {
-            Dictionary<int, Offerte> juisteoffertes = new();
-            foreach (Offerte offerte in offertes.Values)
+            try
             {
-                if (!juisteoffertes.ContainsKey(offerte.Id))
-                {
-                    try
-                    {
-                        juisteoffertes.Add(offerte.Id, offerte);
-                    }
-                    catch (DomeinException)
-                    {
-
-                    }
-                }
+                if (!TCRepository.HeeftOfferte(offerte))
+                    TCRepository.SchrijfOfferte(offerte);
             }
-            return juisteoffertes; 
-
+            catch (Exception)
+            {
+                throw new ManagerException("SchrijfeenOfferte");
+            }
         }
 
-        public List <Klant> MaakKlanten(List<Klant> gelezenklanten)
+
+        public List<Klant> MaakKlanten(List<Klant> gelezenklanten)
         {
-            Dictionary<int , Klant> klanten = new();
+            Dictionary<int, Klant> klanten = new();
             foreach (Klant klant in gelezenklanten)
             {
                 if (!klanten.ContainsKey(klant.Id))
@@ -133,7 +128,7 @@ namespace TC_BL.Manager
                 throw new ManagerException("GeefKlantengegnaam");
             }
         }
-       
+
         public Klantengeg GeefKlantengegevensbyid(int klantId)
         {
             try
@@ -147,14 +142,15 @@ namespace TC_BL.Manager
         }
         public List<Klant> GeefAlleKlanten()
         {
-            Dictionary<int,Klant> klantdic = TCRepository.LeesAlleKlanten();
+            Dictionary<int, Klant> klantdic = TCRepository.LeesAlleKlanten();
             List<Klant> klantlist = new List<Klant>();
-            foreach (Klant klant in klantdic.Values) {
+            foreach (Klant klant in klantdic.Values)
+            {
                 klantlist.Add(klant);
             }
 
             return klantlist;
-            
+
 
         }
 
@@ -162,9 +158,9 @@ namespace TC_BL.Manager
         {
             try
             {
-                Dictionary<int,Product> Producten = TCRepository.LeesAlleProducten();
+                Dictionary<int, Product> Producten = TCRepository.LeesAlleProducten();
                 List<Product> ProductNames = new List<Product>();
-                foreach (Product product in Producten.Values) 
+                foreach (Product product in Producten.Values)
                 {
                     ProductNames.Add(product);
                 }
@@ -175,7 +171,31 @@ namespace TC_BL.Manager
                 throw new ManagerException("GeefKlantengegid");
             }
         }
+        public List<Offerte> ToonOffertes(int? offerteId, Klant? klant, DateTime? datum)
+        {
+            try
+            {
+                return TCRepository.HaalOfferteOp(offerteId, klant, datum);
+            }
+            catch (Exception)
+            {
+                throw new ManagerException("Geen offertes gevonden");
+            }
+        }
+
+        public void SchrijfUpdateOfferte(Offerte offerte, Dictionary<Product, int> proddel, Dictionary<Product, int> produpdate, Dictionary<Product, int> prodnew)
+        {
+            try
+            {
+                TCRepository.UpdateOfferte(offerte, proddel, produpdate, prodnew);
+            }
+            catch (Exception) 
+            {
+                throw new ManagerException("Kon geen update schrijven");
+            }
+        }
     }
+}
 
    
-}
+

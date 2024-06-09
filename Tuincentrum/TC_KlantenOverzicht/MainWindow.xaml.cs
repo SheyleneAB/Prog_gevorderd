@@ -22,8 +22,8 @@ namespace TC_KlantenOverzicht
     /// </summary>
     public partial class MainWindow : Window
     {
-        OpenFileDialog openFileDialog = new OpenFileDialog();
         IFileProcessor fileProcessor;
+        OpenFileDialog openFileDialog = new OpenFileDialog();
         ITCRepository TCRepository;
         TCManager TCManager;
         string connectionString = @"Data Source=Radion\sqlexpress;Initial Catalog=Tuin;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";

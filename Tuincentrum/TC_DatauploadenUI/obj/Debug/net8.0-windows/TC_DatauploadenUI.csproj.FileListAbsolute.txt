@@ -1,8 +1,3 @@
-C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI.csproj.AssemblyReference.cache
-C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI_MarkupCompile.cache
-C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI_MarkupCompile.lref
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_BL.deps.json
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_BL.runtimeconfig.json
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_BL.exe
@@ -61,6 +56,11 @@ C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-win
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_SQL.dll
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_BL.pdb
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\bin\Debug\net8.0-windows\TC_SQL.pdb
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI.csproj.AssemblyReference.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI_MarkupCompile.cache
+C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI_MarkupCompile.lref
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI.g.resources
 C:\Users\elyne\Prog_gevorderd\Tuincentrum\TC_DatauploadenUI\obj\Debug\net8.0-windows\TC_DatauploadenUI.GeneratedMSBuildEditorConfig.editorconfig

@@ -28,21 +28,20 @@ namespace OfferteAanmakenUI
         ITCRepository TCRepository;
         TCManager TCManager;
         string connectionString = @"Data Source=Radion\sqlexpress;Initial Catalog=Tuin;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-        private Offerte huidigeOfferte;
-        private Dictionary<Product, int> productLijst;
-
+        Offerte huidigeOfferte;
+        Dictionary<Product, int> productLijst;
+        
         public MainWindow()
         {
             InitializeComponent();
             fileProcessor = new TC_Fileprocessor();
             TCRepository = new TCRepository(connectionString);
             TCManager = new TCManager(fileProcessor, TCRepository);
+            TCRepository = new TCRepository(connectionString);
             huidigeOfferte = new Offerte();
             productLijst = new Dictionary<Product, int>();
             cbProducten.ItemsSource = TCManager.GeefProducten();
             cbKlanten.ItemsSource = TCManager.GeefAlleKlanten();
-
-
         }
 
         private void btnProductToevoegen_Click(object sender, RoutedEventArgs e)
@@ -51,9 +50,18 @@ namespace OfferteAanmakenUI
             {
                 if (cbProducten.SelectedItem is Product geselecteerdProduct && int.TryParse(tbProductAantal.Text, out int aantal))
                 {
-                    huidigeOfferte.VoegProductToe(geselecteerdProduct, aantal);
-                    productLijst.Add(geselecteerdProduct, aantal);
-                    UpdateProductList();
+                    if (productLijst.ContainsKey(geselecteerdProduct))
+                    {
+                        productLijst[geselecteerdProduct] += aantal;
+                    }
+                    else
+                    {
+                        productLijst.Add(geselecteerdProduct, aantal);
+                    }
+
+                    lbProducten.ItemsSource = null; 
+                    lbProducten.ItemsSource = productLijst.ToList();
+                    prijsberekenen();
                 }
                 else
                 {
@@ -66,19 +74,7 @@ namespace OfferteAanmakenUI
             }
         }
 
-        private void btnProductVerwijderen_Click(object sender, RoutedEventArgs e)
-        {
-            if (lbProducten.SelectedItem is List<Product> geselecteerdItem)
-            {
-                productLijst.Clear();
-                
-            }
-            else
-            {
-                MessageBox.Show("Selecteer een product om te verwijderen.");
-            }
-
-        }
+        
 
         private void btnOfferteAanmaken_Click(object sender, RoutedEventArgs e)
         {
@@ -97,6 +93,9 @@ namespace OfferteAanmakenUI
                 huidigeOfferte.AfhalenBool = afhalen;
                 huidigeOfferte.PlaatsenBool = plaatsen;
 
+                foreach (Product product in productLijst.Keys) { 
+                    huidigeOfferte.VoegProductToe(product,productLijst[product]);
+                }
                 TCManager.SchrijfeenOfferte(huidigeOfferte);
 
                 MessageBox.Show($"Offerte aangemaakt voor klant: {klant.Naam}\nDatum: {datum.ToShortDateString()}\nAfhalen: {afhalen}\nPlaatsen: {plaatsen}\nPrijs: €{huidigeOfferte.prijsberekenen():F2}");
@@ -107,10 +106,98 @@ namespace OfferteAanmakenUI
             }
 
         }
-        private void UpdateProductList()
+
+        private void btneenProductVerwijderen_Click(object sender, RoutedEventArgs e)
         {
+            if (lbProducten.SelectedItem is KeyValuePair<Product, int> geselecteerdItem)
+            {
+                productLijst.Remove(geselecteerdItem.Key);
+
+                lbProducten.ItemsSource = null;
+                lbProducten.ItemsSource = productLijst.ToList();
+                prijsberekenen();
+            }
+            else
+            {
+                MessageBox.Show("Selecteer een product om te verwijderen.");
+            }
+        }
+
+        private void btnAlleProductenVerwijderen_Click(object sender, RoutedEventArgs e)
+        {
+            productLijst.Clear();
             lbProducten.ItemsSource = null;
-            lbProducten.ItemsSource = productLijst;
+            prijsberekenen();
+
+        }
+
+        private void btnAantalProductVerwijderen_Click(object sender, RoutedEventArgs e)
+        {
+            if (lbProducten.SelectedItem is KeyValuePair<Product, int> geselecteerdItem)
+            {
+                int aantal = int.Parse(tbAantalVerwijderen.Text);
+                
+                if (productLijst[geselecteerdItem.Key] <= aantal) 
+                {
+                    productLijst.Remove(geselecteerdItem.Key);
+                }
+                else
+                {
+                    productLijst[geselecteerdItem.Key] -= aantal;
+                }
+
+                lbProducten.ItemsSource = null;
+                lbProducten.ItemsSource = productLijst.ToList();
+                prijsberekenen();
+            }
+            else
+            {
+                MessageBox.Show("Selecteer een product om te verwijderen.");
+            }
+
+        }
+        public void prijsberekenen()
+         {
+             double prijs = 0;
+             foreach (Product product in productLijst.Keys)
+             {
+                 prijs = prijs + (product.Prijs * productLijst[product]);
+             }
+             if (prijs > 5000)
+             {
+                 prijs = prijs * 0.90;
+             }
+             if (prijs > 2000 && prijs < 5000)
+             {
+                 prijs = prijs * 0.95;
+             }
+             if (cbAfhalen.IsPressed )
+             {
+                 if (prijs < 500)
+                 {
+                     prijs = prijs + 100;
+                 }
+                 if (prijs < 1000 && prijs > 500)
+                 {
+                     prijs = prijs + 50;
+                 }
+             }
+             if (cbPlaatsen.IsPressed)
+             {
+                 if (prijs < 2000)
+                 {
+                     prijs = prijs * 1.15;
+                 }
+                 if (prijs > 2000 && prijs < 5000)
+                 {
+                     prijs = prijs * 1.10;
+                 }
+                 else
+                 {
+                     prijs = prijs * 1.05;
+                 }
+             }
+            prijslabel.Content = prijs;
         }
     }
 }

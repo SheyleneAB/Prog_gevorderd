@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}|TCUnittesten\\TCUnittesten.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tcunittesten\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC80CE6A-EFE5-41B3-9326-D5548B7F07E7}|TCUnittesten\\TCUnittesten.csproj|solutionrelative:tcunittesten\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F66D2CE-86BA-4515-BD96-05294A10DA9B}|OfferteAanmakenUI\\OfferteAanmakenUI.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\offerteaanmakenui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F66D2CE-86BA-4515-BD96-05294A10DA9B}|OfferteAanmakenUI\\OfferteAanmakenUI.csproj|solutionrelative:offerteaanmakenui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_bl\\model\\klant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|solutionrelative:tc_bl\\model\\klant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{336CF430-A1EA-45D8-B931-08FCA9F5951D}|TC_SQL\\TC_SQL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_sql\\tc_fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{336CF430-A1EA-45D8-B931-08FCA9F5951D}|TC_SQL\\TC_SQL.csproj|solutionrelative:tc_sql\\tc_fileprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_bl\\manager\\tcmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|solutionrelative:tc_bl\\manager\\tcmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_bl\\model\\offerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|solutionrelative:tc_bl\\model\\offerte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_bl\\model\\klantengeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99AADCDF-1349-428F-B53C-126C52B6D26B}|TC_BL\\TC_BL.csproj|solutionrelative:tc_bl\\model\\klantengeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8EBE699-E756-47A0-9FFE-F35A894C3CCA}|TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_zoekofferteui\\vindofferte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C8EBE699-E756-47A0-9FFE-F35A894C3CCA}|TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj|solutionrelative:tc_zoekofferteui\\vindofferte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{336CF430-A1EA-45D8-B931-08FCA9F5951D}|TC_SQL\\TC_SQL.csproj|c:\\users\\elyne\\prog_gevorderd\\tuincentrum\\tc_sql\\tcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{336CF430-A1EA-45D8-B931-08FCA9F5951D}|TC_SQL\\TC_SQL.csproj|solutionrelative:tc_sql\\tcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,104 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TCUnittesten\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "TCUnittesten\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TCUnittesten\\UnitTest1.cs",
-              "RelativeToolTip": "TCUnittesten\\UnitTest1.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAFsAAAAbAAAA",
+              "Title": "TCRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TCRepository.cs",
+              "RelativeDocumentMoniker": "TC_SQL\\TCRepository.cs",
+              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TCRepository.cs",
+              "RelativeToolTip": "TC_SQL\\TCRepository.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAPkBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:46:56.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TC_Fileprocessor.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_Fileprocessor.cs",
-              "RelativeDocumentMoniker": "TC_SQL\\TC_Fileprocessor.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_Fileprocessor.cs",
-              "RelativeToolTip": "TC_SQL\\TC_Fileprocessor.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:39:23.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TCManager.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Manager\\TCManager.cs",
-              "RelativeDocumentMoniker": "TC_BL\\Manager\\TCManager.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Manager\\TCManager.cs",
-              "RelativeToolTip": "TC_BL\\Manager\\TCManager.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:37:49.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Offerte.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Offerte.cs",
-              "RelativeDocumentMoniker": "TC_BL\\Model\\Offerte.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Offerte.cs",
-              "RelativeToolTip": "TC_BL\\Model\\Offerte.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:36:36.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Klantengeg.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Klantengeg.cs",
-              "RelativeDocumentMoniker": "TC_BL\\Model\\Klantengeg.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Klantengeg.cs",
-              "RelativeToolTip": "TC_BL\\Model\\Klantengeg.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:35:57.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Klant.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Klant.cs",
-              "RelativeDocumentMoniker": "TC_BL\\Model\\Klant.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\Model\\Klant.cs",
-              "RelativeToolTip": "TC_BL\\Model\\Klant.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T09:35:44.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VindOfferte.xaml",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\VindOfferte.xaml",
-              "RelativeDocumentMoniker": "TC_ZoekOfferteUI\\VindOfferte.xaml",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\VindOfferte.xaml",
-              "RelativeToolTip": "TC_ZoekOfferteUI\\VindOfferte.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T09:13:58.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "OfferteAanmakenUI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\MainWindow.xaml.cs",
-              "RelativeToolTip": "OfferteAanmakenUI\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAAGMAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T21:21:23.531Z",
+              "WhenOpened": "2024-06-09T18:08:23.332Z",
               "EditorCaption": ""
             }
           ]

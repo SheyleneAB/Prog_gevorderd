@@ -8,4 +8,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TC_BL\TC_BL.csproj" />
+    <ProjectReference Include="..\TC_SQL\TC_SQL.csproj" />
+    <ProjectReference Include="..\TC_UpdateOfferteUI\TC_UpdateOfferteUI.csproj" />
+  </ItemGroup>
+
 </Project>

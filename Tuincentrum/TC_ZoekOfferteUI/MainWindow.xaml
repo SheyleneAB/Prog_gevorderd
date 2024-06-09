@@ -5,22 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TC_ZoekOfferteUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Zoek Een Offerte" Height="300" Width="400"
+        Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
 
-
-        <TextBlock Grid.Row="0" Text="Zoek Offerte " FontSize="20" 
+    <TextBlock Grid.Row="0" Text="Zoek Offerte " FontSize="20" 
             HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"/>
 
+    <StackPanel Grid.Row="1" Width="250">
+        <TextBlock Text="Offerte ID" />
+        <TextBox Name="OfferteIdTextBox" TextChanged="OfferteIdTextBox_TextChanged"/>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-            <TextBox Width="200" Margin="5" Name="searchTextBox"/>
-            <Button Content="Search" Width="75" Margin="5" Click="ToonOfferte_Click"/>
-        </StackPanel>
+        <TextBlock Text="Klant Naam:" Margin="0,10,0,0"/>
+        <ComboBox Name="cboKlanten" HorizontalAlignment="Left" Width="240" Margin="0,0,10,0" SelectionChanged="CboKlanten_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Naam}" Margin="0,0,10,0"/>
+                        <TextBlock Text="{Binding Adres}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
 
+        <TextBlock Text="Datum" />
+        <DatePicker Name="DatumPicker" SelectedDateChanged="DatumPicker_SelectedDateChanged"/>
+    </StackPanel>
+
+    <Button Name="SearchButton" Grid.Row="2" Content="Search" Click="SearchButton_Click" Margin="20" Width="250" />
     </Grid>
 </Window>

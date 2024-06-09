@@ -1,0 +1,554 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_AlgemeenOverzichtUI\\TC_AlgemeenOverzichtUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj",
+        "projectName": "OfferteAanmakenUI",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_AlgemeenOverzichtUI\\TC_AlgemeenOverzichtUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_AlgemeenOverzichtUI\\TC_AlgemeenOverzichtUI.csproj",
+        "projectName": "TC_AlgemeenOverzichtUI",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_AlgemeenOverzichtUI\\TC_AlgemeenOverzichtUI.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_AlgemeenOverzichtUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\TC_DatauploadenUI.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\TC_DatauploadenUI.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\TC_KlantenOverzicht.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\TC_KlantenOverzicht.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\TC_OfferteOverzicht.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\TC_OfferteOverzicht.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj",
+        "projectName": "TC_BL",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\TC_DatauploadenUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\TC_DatauploadenUI.csproj",
+        "projectName": "TC_DatauploadenUI",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\TC_DatauploadenUI.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_DatauploadenUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\TC_KlantenOverzicht.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\TC_KlantenOverzicht.csproj",
+        "projectName": "TC_KlantenOverzicht",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\TC_KlantenOverzicht.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_KlantenOverzicht\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\TC_OfferteOverzicht.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\TC_OfferteOverzicht.csproj",
+        "projectName": "TC_OfferteOverzicht",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\TC_OfferteOverzicht.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_OfferteOverzicht\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\OfferteAanmakenUI\\OfferteAanmakenUI.csproj"
+              },
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj",
+        "projectName": "TC_SQL",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\TC_SQL.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_SQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj": {
+                "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_BL\\TC_BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj",
+        "projectName": "TC_ZoekOfferteUI",
+        "projectPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\TC_ZoekOfferteUI.csproj",
+        "packagesPath": "C:\\Users\\elyne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elyne\\Prog_gevorderd\\Tuincentrum\\TC_ZoekOfferteUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elyne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

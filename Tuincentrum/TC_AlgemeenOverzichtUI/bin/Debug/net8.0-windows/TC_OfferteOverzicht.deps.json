@@ -9,6 +9,7 @@
       "TC_OfferteOverzicht/1.0.0": {
         "dependencies": {
           "OfferteAanmakenUI": "1.0.0",
+          "TC_UpdateOfferteUI": "1.0.0",
           "TC_ZoekOfferteUI": "1.0.0"
         },
         "runtime": {
@@ -422,7 +423,21 @@
           "TC_SQL.dll": {}
         }
       },
+      "TC_UpdateOfferteUI/1.0.0": {
+        "dependencies": {
+          "TC_BL": "1.0.0",
+          "TC_SQL": "1.0.0"
+        },
+        "runtime": {
+          "TC_UpdateOfferteUI.dll": {}
+        }
+      },
       "TC_ZoekOfferteUI/1.0.0": {
+        "dependencies": {
+          "TC_BL": "1.0.0",
+          "TC_SQL": "1.0.0",
+          "TC_UpdateOfferteUI": "1.0.0"
+        },
         "runtime": {
           "TC_ZoekOfferteUI.dll": {}
         }
@@ -712,6 +727,11 @@
       "sha512": ""
     },
     "TC_SQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TC_UpdateOfferteUI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

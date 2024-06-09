@@ -28,5 +28,19 @@ namespace TC_BL.Model
             { if (string.IsNullOrEmpty(value)) throw new DomeinException("beschrijving is null"); beschrijving = value; } }
         public double Prijs { get { return prijs; } set { if (value < 0) throw new DomeinException("prijs"); prijs = value; } }
 
+        public override bool Equals(object? obj)
+        {
+            return obj is Product product &&
+                   Id == product.Id &&
+                   Nednaam == product.Nednaam &&
+                   Wetnaam == product.Wetnaam &&
+                   Beschrijving == product.Beschrijving &&
+                   Prijs == product.Prijs;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Nednaam, Wetnaam, Beschrijving, Prijs);
+        }
     }
 }

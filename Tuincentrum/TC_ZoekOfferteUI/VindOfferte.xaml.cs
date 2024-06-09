@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TC_BL.Model;
 
 namespace TC_ZoekOfferteUI
 {
@@ -19,9 +20,20 @@ namespace TC_ZoekOfferteUI
     /// </summary>
     public partial class VindOfferte : Window
     {
-        public VindOfferte()
+        private List<Offerte> offertes;
+
+        public VindOfferte(List<Offerte> offertes)
         {
             InitializeComponent();
+            this.DataContext = offertes;
+            StatistiekenDataGridoffertes.ItemsSource = offertes;
+        }
+
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+            Offerte SelOf = StatistiekenDataGridoffertes.SelectedItem as Offerte;
+            TC_UpdateOfferteUI.MainWindow w = new TC_UpdateOfferteUI.MainWindow(SelOf);
+            w.Show();
         }
     }
 }

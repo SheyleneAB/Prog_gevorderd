@@ -24,8 +24,8 @@ namespace TC_KlantenOverzicht
         {
             InitializeComponent();
             this.DataContext = klantengeg;
-            StatistiekenDataGrid.ItemsSource = klantengeg.Offertenummber;
-           
+            StatistiekenDataGrid2.ItemsSource = klantengeg.Offertenummber;
+
         }
     }
 }

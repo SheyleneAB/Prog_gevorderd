@@ -19,5 +19,7 @@ namespace TC_BL.Interfaces
         public Dictionary<int, Product> LeesAlleProducten();
         Klantengeg LeesKlantengegnaam(string klantnaam);
         Klantengeg LeesKlantengegid(int klantid);
+        public List<Offerte> HaalOfferteOp(int? offerteId, Klant? klant, DateTime? datum);
+        public void UpdateOfferte(Offerte offerte, Dictionary<Product, int> proddel, Dictionary<Product, int> produpdate, Dictionary<Product, int> prodnew);
     }
 }

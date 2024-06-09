@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="Algemeen Overzicht" Height="450" Width="800" >
     <Window.Background>
-        <SolidColorBrush Color="#cef"/>
+       
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="LightBlue" Offset="0.0"/>
+                <GradientStop Color="LightGoldenrodYellow" Offset="1.0"/>
+            </LinearGradientBrush>
+       
     </Window.Background>
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" >

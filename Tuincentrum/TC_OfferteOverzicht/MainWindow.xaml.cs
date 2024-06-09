@@ -35,7 +35,8 @@ namespace TC_OfferteOverzicht
 
         private void Update_Click(object sender, RoutedEventArgs e)
         {
-
+            TC_UpdateOfferteUI.MainWindow w = new TC_UpdateOfferteUI.MainWindow();
+            w.Show();
         }
     }
 }
