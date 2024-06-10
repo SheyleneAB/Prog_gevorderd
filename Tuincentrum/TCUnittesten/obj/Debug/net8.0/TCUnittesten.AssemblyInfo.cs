@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCUnittesten")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68562279c10ee5ab541256dbe07f936b42f165b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+735566ae7940859f46a9fdf372cab653a8821dda")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCUnittesten")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCUnittesten")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

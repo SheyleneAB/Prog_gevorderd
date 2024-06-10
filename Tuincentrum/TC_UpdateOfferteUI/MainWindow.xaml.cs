@@ -25,7 +25,7 @@ namespace TC_UpdateOfferteUI
         public Offerte Offerte;
 
         OpenFileDialog openFileDialog = new OpenFileDialog();
-        IFileProcessor fileProcessor;
+      
         ITCRepository TCRepository;
         TCManager TCManager;
         string connectionString = @"Data Source=Radion\sqlexpress;Initial Catalog=Tuin;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
@@ -37,9 +37,9 @@ namespace TC_UpdateOfferteUI
         public MainWindow()
         {
             InitializeComponent();
-            fileProcessor = new TC_Fileprocessor();
+           
             TCRepository = new TCRepository(connectionString);
-            TCManager = new TCManager(fileProcessor, TCRepository);
+            TCManager = new TCManager(TCRepository);
             cbProducten.ItemsSource = TCManager.GeefProducten();
             Offerte = new Offerte();
         }
@@ -47,9 +47,9 @@ namespace TC_UpdateOfferteUI
         public MainWindow(Offerte offerte)
         {
             InitializeComponent();
-            fileProcessor = new TC_Fileprocessor();
+            
             TCRepository = new TCRepository(connectionString);
-            TCManager = new TCManager(fileProcessor, TCRepository);
+            TCManager = new TCManager(TCRepository);
             cbProducten.ItemsSource = TCManager.GeefProducten();
             Offerte = offerte;
             this.DataContext = Offerte;

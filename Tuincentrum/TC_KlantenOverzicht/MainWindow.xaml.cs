@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System.Collections.ObjectModel;
+using System.Numerics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,6 +15,7 @@ using TC_BL.Interfaces;
 using TC_BL.Manager;
 using TC_BL.Model;
 using TC_SQL;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TC_KlantenOverzicht
 {
@@ -22,7 +24,6 @@ namespace TC_KlantenOverzicht
     /// </summary>
     public partial class MainWindow : Window
     {
-        IFileProcessor fileProcessor;
         OpenFileDialog openFileDialog = new OpenFileDialog();
         ITCRepository TCRepository;
         TCManager TCManager;
@@ -31,9 +32,8 @@ namespace TC_KlantenOverzicht
         public MainWindow()
         {
             InitializeComponent();
-            fileProcessor = new TC_Fileprocessor();
             TCRepository = new TCRepository(connectionString);
-            TCManager = new TCManager(fileProcessor, TCRepository);
+            TCManager = new TCManager(TCRepository);
         }
 
 
@@ -63,8 +63,10 @@ namespace TC_KlantenOverzicht
 
                 else 
                 {
-                 
-                    Klantengeg klantengeg = TCManager.GeefKlantengegevensbyid(klantId);
+                    Klant klant = klantenopid[klantId];
+                    DateTime datum = new DateTime();
+                    int? offerteid = null;
+                    List<Offerte>klantengeg = TCManager.ToonOffertes(offerteid, klant, datum);
 
                     KlantopzoekenUI w = new KlantopzoekenUI(klantengeg);
                     w.ShowDialog();
@@ -78,7 +80,10 @@ namespace TC_KlantenOverzicht
                 }
                 else
                 {
-                   Klantengeg klantengeg = TCManager.GeefKlantengegevensbynaam(input);
+                    Klant klant = klantenopnaam[input];
+                    DateTime datum = new DateTime();
+                    int? offerteid = null;
+                    List<Offerte> klantengeg = TCManager.ToonOffertes(offerteid, klant, datum);
 
                     KlantopzoekenUI w = new KlantopzoekenUI(klantengeg);
                     w.ShowDialog(); 

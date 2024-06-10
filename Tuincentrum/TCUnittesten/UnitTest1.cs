@@ -181,18 +181,7 @@ namespace TCUnittesten
             Assert.Equal("strip-verwijderauteur", exception.Message);
         }
 
-        /* [Fact]
-         public void VerwijderProduct_OnlyOneProduct_ThrowsException()
-         {
-             var klant = new Klant(1, "molly", "drongen");
-             Offerte offerte = new Offerte(new DateTime(2024, 5, 29), klant, false, true);
-             var product = new Product(1, "flora", "lowies", "een bloem idk", 1500);
-             offerte.VoegProductToe(product, 1);
-
-             //var exception = Assert.Throws<DomeinException>(() => offerte.VerwijderProduct(product));
-             Assert.Equal("strip-verwijderauteur", exception.Message);
-         }
-        */
+      
 
     }
 }

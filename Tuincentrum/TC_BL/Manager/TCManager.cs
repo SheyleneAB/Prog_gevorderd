@@ -16,11 +16,10 @@ namespace TC_BL.Manager
     {
         private IFileProcessor fileProcessor;
         private ITCRepository TCRepository;
-        private ITCRepository tCRepository;
 
         public TCManager(ITCRepository tCRepository)
         {
-            this.tCRepository = tCRepository;
+            this.TCRepository = tCRepository;
         }
         public TCManager(IFileProcessor fileProcessor, ITCRepository itcRepositrory)
         {
@@ -117,29 +116,6 @@ namespace TC_BL.Manager
             return Producten.Values.ToList();
         }
 
-        public Klantengeg GeefKlantengegevensbynaam(string klantnaam)
-        {
-            try
-            {
-                return TCRepository.LeesKlantengegnaam(klantnaam);
-            }
-            catch (Exception)
-            {
-                throw new ManagerException("GeefKlantengegnaam");
-            }
-        }
-
-        public Klantengeg GeefKlantengegevensbyid(int klantId)
-        {
-            try
-            {
-                return TCRepository.LeesKlantengegid(klantId);
-            }
-            catch (Exception)
-            {
-                throw new ManagerException("GeefKlantengegid");
-            }
-        }
         public List<Klant> GeefAlleKlanten()
         {
             Dictionary<int, Klant> klantdic = TCRepository.LeesAlleKlanten();

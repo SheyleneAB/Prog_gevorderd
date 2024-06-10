@@ -23,7 +23,7 @@ namespace TC_ZoekOfferteUI
     public partial class MainWindow : Window
     {
         OpenFileDialog openFileDialog = new OpenFileDialog();
-        IFileProcessor fileProcessor;
+        
         ITCRepository TCRepository;
         TCManager TCManager;
         string connectionString = @"Data Source=Radion\sqlexpress;Initial Catalog=Tuin;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
@@ -32,9 +32,9 @@ namespace TC_ZoekOfferteUI
         public MainWindow()
         {
             InitializeComponent();
-            fileProcessor = new TC_Fileprocessor();
+            
             TCRepository = new TCRepository(connectionString);
-            TCManager = new TCManager(fileProcessor, TCRepository);
+            TCManager = new TCManager(TCRepository);
             huidigeOfferte = new Offerte();
             productLijst = new Dictionary<Product, int>();
             

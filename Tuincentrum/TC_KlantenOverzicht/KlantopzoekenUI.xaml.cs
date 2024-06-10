@@ -20,12 +20,19 @@ namespace TC_KlantenOverzicht
     /// </summary>
     public partial class KlantopzoekenUI : Window
     {
-        public KlantopzoekenUI(Klantengeg klantengeg)
+        public KlantopzoekenUI(List<Offerte> klantengeg)
         {
             InitializeComponent();
             this.DataContext = klantengeg;
-            StatistiekenDataGrid2.ItemsSource = klantengeg.Offertenummber;
+            StatistiekenDataGrid2.ItemsSource = klantengeg;
+            aantaloffertes.Content = klantengeg.Count();
 
+            double totaalprijs = 0;
+            foreach (var offerte in klantengeg)
+            {
+                totaalprijs += offerte.prijsberekenen();
+            }
+            Totaalprijs.Content = totaalprijs;
         }
     }
 }
